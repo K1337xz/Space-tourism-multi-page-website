@@ -1,6 +1,57 @@
-body {
-	height: 100%;
-	background-image: url("../assets/home/background-home-desktop.jpg");
-	background-repeat: no-repeat;
-	background-size: cover;
+@forward "../components/nav";
+@forward "../base/typography";
+@forward "../base/reset";
+@forward "../components/buttons";
+@use "../abstracts/brakepoints" as *;
+@use "../abstracts/colors" as *;
+@use "../base/typography" as *;
+
+//mobile dsg
+@include xs {
+	body {
+		height: 100vh;
+		background-image: url("../assets/home/background-home-mobile.jpg");
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+	.container {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-between;
+		text-align: center;
+		height: 75%;
+	}
+	.leftContent {
+		p:first-child {
+			font-size: 16px;
+			color: $ptext;
+			text-transform: uppercase;
+			line-height: 19px;
+			letter-spacing: 2.7px;
+			font-style: normal;
+			font-weight: 400;
+			font-family: $barlowCondensed;
+		}
+		h1 {
+			color: $h1text;
+			font-size: 80px;
+			text-transform: uppercase;
+			font-family: $bellefair;
+			line-height: 100px;
+			font-weight: 400;
+		}
+		p:last-child {
+			color: $ptext;
+			font-family: $barlow;
+			font-style: normal;
+			font-weight: 400;
+			font-size: 15px;
+			line-height: 25px;
+		}
+		.topContent {
+			background-color: $bgcolor;
+			height: 74%;
+		}
+	}
 }

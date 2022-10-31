@@ -1,6 +1,110 @@
-body {
-  height: 100%;
-  background-image: url("../assets/home/background-home-desktop.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
+@import url("https://fonts.googleapis.com/css2?family=Alata&family=Barlow&family=Barlow+Condensed&family=Bellefair&family=Inter:wght@400;700&family=Josefin+Sans:wght@300;400;700&family=Kumbh+Sans:wght@400;700&display=swap");
+@media (min-width: 0) {
+  header {
+    width: 100%;
+    height: 17vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  nav {
+    width: 100%;
+    height: 100%;
+  }
+  nav .mainNavbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem;
+  }
+  nav .mainNavbar .openMobile {
+    display: block;
+    background-image: url("../assets/shared/icon-hamburger.svg");
+    width: 24px;
+    height: 21px;
+  }
+  .navItems {
+    display: none;
+  }
+  .navItems li {
+    list-style: none;
+  }
+  .navItems li a {
+    text-decoration: none;
+    color: white;
+  }
+}
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+@media (min-width: 0) {
+  .rightButton {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  .rightButton .circle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    background-color: hsl(0deg, 0%, 100%);
+  }
+  .rightButton .circle a {
+    text-align: center;
+    color: hsl(230deg, 35%, 7%);
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+}
+@media (min-width: 0) {
+  body {
+    height: 100vh;
+    background-image: url("../assets/home/background-home-mobile.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    height: 75%;
+  }
+  .leftContent p:first-child {
+    font-size: 16px;
+    color: hsl(231deg, 79%, 90%);
+    text-transform: uppercase;
+    line-height: 19px;
+    letter-spacing: 2.7px;
+    font-style: normal;
+    font-weight: 400;
+    font-family: "Barlow Condensed", sans-serif;
+  }
+  .leftContent h1 {
+    color: hsl(0deg, 0%, 100%);
+    font-size: 80px;
+    text-transform: uppercase;
+    font-family: "Bellefair", serif;
+    line-height: 100px;
+    font-weight: 400;
+  }
+  .leftContent p:last-child {
+    color: hsl(231deg, 79%, 90%);
+    font-family: "Barlow", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+  }
+  .leftContent .topContent {
+    background-color: hsl(230deg, 35%, 7%);
+    height: 74%;
+  }
 }/*# sourceMappingURL=stylemain.css.map */
