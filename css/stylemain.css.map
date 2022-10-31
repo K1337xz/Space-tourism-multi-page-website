@@ -1,1 +1,1 @@
-{"version":3,"sources":[],"names":[],"mappings":"","file":"stylemain.css"}
+{"version":3,"sources":["../sass/layouts/_home.scss","stylemain.css"],"names":[],"mappings":"AAAA;EACC,YAAA;EACA,mEAAA;EACA,4BAAA;EACA,sBAAA;ACCD","file":"stylemain.css"}

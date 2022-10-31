@@ -1,1 +1,6 @@
-/*# sourceMappingURL=stylemain.css.map */
+body {
+  height: 100%;
+  background-image: url("../assets/home/background-home-desktop.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}/*# sourceMappingURL=stylemain.css.map */
