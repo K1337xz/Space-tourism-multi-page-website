@@ -1,1 +1,17 @@
 @forward "../components/nav";
+@forward "../components/nav";
+@forward "../base/typography";
+@forward "../base/reset";
+@forward "../components/buttons";
+@use "../abstracts/brakepoints" as *;
+@use "../abstracts/colors" as *;
+@use "../base/typography" as *;
+
+@include sm {
+	body {
+		height: 100vh;
+		background-image: url("../assets/destination/background-destination-mobile.jpg");
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+}

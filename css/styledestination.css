@@ -340,4 +340,97 @@
     opacity: 0.25;
     z-index: 1;
   }
+}
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+@media (max-width: 600px) {
+  .rightButton {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  .rightButton .circle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    background-color: hsl(0deg, 0%, 100%);
+  }
+  .rightButton .circle a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: hsl(230deg, 35%, 7%);
+    font-family: "Bellefair", serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    letter-spacing: 1.25px;
+  }
+}
+@media (min-width: 600px) {
+  .rightButton {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  .rightButton .circle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 242px;
+    height: 242px;
+    border-radius: 100%;
+    background-color: hsl(0deg, 0%, 100%);
+  }
+  .rightButton .circle a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: hsl(230deg, 35%, 7%);
+    font-family: "Bellefair", serif;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 37px;
+    letter-spacing: 2px;
+  }
+}
+@media (min-width: 992px) {
+  .rightButton {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  .rightButton .circle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 274px;
+    height: 274px;
+    border-radius: 100%;
+    background-color: hsl(0deg, 0%, 100%);
+    cursor: pointer;
+  }
+  .rightButton .circle a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: hsl(230deg, 35%, 7%);
+    font-family: "Bellefair", serif;
+    font-size: 32px;
+    line-height: 37px;
+    letter-spacing: 2px;
+  }
+}
+@media (max-width: 600px) {
+  body {
+    height: 100vh;
+    background-image: url("../assets/destination/background-destination-mobile.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 }/*# sourceMappingURL=styledestination.css.map */
