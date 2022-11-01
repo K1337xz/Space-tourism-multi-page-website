@@ -1,7 +1,7 @@
 @use "../abstracts/brakepoints" as *;
 @use "../abstracts/colors" as *;
-
-@include xs {
+@use "../base/typography" as *;
+@include sm {
 	.rightButton {
 		display: flex;
 		justify-content: center;
@@ -15,11 +15,41 @@
 			border-radius: 100%;
 			background-color: $h1text;
 			a {
-				font-family: $bellefair;
-				text-align: center;
-				color: blue;
 				text-decoration: none;
 				text-transform: uppercase;
+				color: $bgcolor;
+				font-family: $bellefair;
+				font-weight: 400;
+				font-size: 20px;
+				line-height: 23px;
+				text-align: center;
+				letter-spacing: 1.25px;
+			}
+		}
+	}
+}
+@include md {
+	.rightButton {
+		display: flex;
+		justify-content: center;
+		width: 100%;
+		.circle {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			width: 242px;
+			height: 242px;
+			border-radius: 100%;
+			background-color: $h1text;
+			a {
+				text-decoration: none;
+				text-transform: uppercase;
+				color: $bgcolor;
+				font-family: $bellefair;
+				font-weight: 400;
+				font-size: 32px;
+				line-height: 37px;
+				letter-spacing: 2px;
 			}
 		}
 	}
