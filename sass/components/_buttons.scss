@@ -54,3 +54,29 @@
 		}
 	}
 }
+@include lg {
+	.rightButton {
+		display: flex;
+		justify-content: center;
+		width: 100%;
+		.circle {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			width: 274px;
+			height: 274px;
+			border-radius: 100%;
+			background-color: $h1text;
+			cursor: pointer;
+			a {
+				text-decoration: none;
+				text-transform: uppercase;
+				color: $bgcolor;
+				font-family: $bellefair;
+				font-size: 32px;
+				line-height: 37px;
+				letter-spacing: 2px;
+			}
+		}
+	}
+}

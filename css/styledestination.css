@@ -1,1 +1,343 @@
-/*# sourceMappingURL=styledestination.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Alata&family=Barlow&family=Barlow+Condensed&family=Bellefair&family=Inter:wght@400;700&family=Josefin+Sans:wght@300;400;700&family=Kumbh+Sans:wght@400;700&display=swap");
+@media (max-width: 600px) {
+  header {
+    width: 100%;
+    height: 17vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  nav {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+  nav .mainNavbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem;
+  }
+  nav .mainNavbar .openMobile {
+    display: block;
+    background-image: url("../assets/shared/icon-hamburger.svg");
+    width: 24px;
+    height: 21px;
+  }
+  .navItems {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 0%;
+    background: rgba(255, 255, 255, 0.04);
+    -webkit-backdrop-filter: blur(40.7742px);
+            backdrop-filter: blur(40.7742px);
+    gap: 2rem;
+    font-family: "Barlow Condensed", sans-serif;
+    transition: width 0.5s linear;
+    overflow-x: hidden;
+  }
+  .navItems li {
+    list-style: none;
+    margin-left: 2rem;
+  }
+  .navItems li a {
+    text-decoration: none;
+    color: white;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 2.7px;
+    text-transform: uppercase;
+  }
+  .navItems li span {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 2.7px;
+  }
+  .navItems .cls {
+    width: 100%;
+    height: 12%;
+  }
+  .navItems .cls .closeMobile {
+    display: block;
+    width: 19.09px;
+    height: 19.09px;
+    background-image: url("../assets/shared/icon-close.svg");
+    z-index: 1;
+    position: absolute;
+    left: 210.45px;
+    top: 33.95px;
+  }
+}
+@media (min-width: 600px) {
+  header {
+    width: 100%;
+    height: 17vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  nav {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+  nav .mainNavbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem;
+  }
+  nav .mainNavbar .openMobile {
+    display: none;
+    background-image: url("../assets/shared/icon-hamburger.svg");
+    width: 24px;
+    height: 21px;
+  }
+  .navItems {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 9vh;
+    width: 60%;
+    background: rgba(255, 255, 255, 0.04);
+    -webkit-backdrop-filter: blur(40.7742px);
+            backdrop-filter: blur(40.7742px);
+    gap: 2rem;
+    font-family: "Barlow Condensed", sans-serif;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  .navItems li {
+    list-style: none;
+    margin-left: 1rem;
+  }
+  .navItems li a {
+    text-decoration: none;
+    color: white;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 2.3625px;
+    text-transform: uppercase;
+  }
+  .navItems li span {
+    display: none;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 2.7px;
+  }
+  .navItems .cls {
+    display: none;
+    width: 100%;
+    height: 12%;
+  }
+  .navItems .cls .closeMobile {
+    display: none;
+    width: 19.09px;
+    height: 19.09px;
+    background-image: url("../assets/shared/icon-close.svg");
+    z-index: 1;
+    position: absolute;
+    left: 210.45px;
+    top: 33.95px;
+  }
+}
+@media (min-width: 992px) {
+  header {
+    width: 100%;
+    height: 25vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  nav {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+  nav .mainNavbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0;
+    margin-top: 4rem;
+  }
+  nav .mainNavbar .openMobile {
+    display: none;
+    background-image: url("../assets/shared/icon-hamburger.svg");
+    width: 24px;
+    height: 21px;
+  }
+  .logoWrapper {
+    margin-left: 5rem;
+  }
+  .navItems {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 11vh;
+    width: 60%;
+    background: rgba(255, 255, 255, 0.04);
+    -webkit-backdrop-filter: blur(40.7742px);
+            backdrop-filter: blur(40.7742px);
+    gap: 5rem;
+    font-family: "Barlow Condensed", sans-serif;
+    position: relative;
+  }
+  .navItems li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    margin-left: 1rem;
+  }
+  .navItems li:hover {
+    height: 11vh;
+    border-bottom: 3px solid hsl(0deg, 0%, 100%);
+  }
+  .navItems li a {
+    text-decoration: none;
+    color: white;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 2.3625px;
+    text-transform: uppercase;
+  }
+  .navItems li span {
+    display: inline;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 2.7px;
+  }
+  .navItems .cls {
+    display: none;
+    width: 100%;
+    height: 12%;
+  }
+  .navItems .cls .closeMobile {
+    display: none;
+    width: 19.09px;
+    height: 19.09px;
+    background-image: url("../assets/shared/icon-close.svg");
+    z-index: 1;
+    position: absolute;
+    left: 210.45px;
+    top: 33.95px;
+  }
+}
+@media (min-width: 1200px) {
+  header {
+    width: 100%;
+    height: 25vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  nav {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+  nav .mainNavbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0;
+    margin-top: 4rem;
+  }
+  nav .mainNavbar .openMobile {
+    display: none;
+    background-image: url("../assets/shared/icon-hamburger.svg");
+    width: 24px;
+    height: 21px;
+  }
+  .logoWrapper {
+    margin-left: 5rem;
+  }
+  .navItems {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 11vh;
+    width: 60%;
+    background: rgba(255, 255, 255, 0.04);
+    -webkit-backdrop-filter: blur(40.7742px);
+            backdrop-filter: blur(40.7742px);
+    gap: 5rem;
+    font-family: "Barlow Condensed", sans-serif;
+    position: relative;
+  }
+  .navItems li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    margin-left: 1rem;
+  }
+  .navItems li:hover {
+    height: 11vh;
+    border-bottom: 3px solid hsl(0deg, 0%, 100%);
+  }
+  .navItems li a {
+    text-decoration: none;
+    color: white;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 2.3625px;
+    text-transform: uppercase;
+  }
+  .navItems li span {
+    display: inline;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 2.7px;
+  }
+  .navItems .cls {
+    display: none;
+    width: 100%;
+    height: 12%;
+  }
+  .navItems .cls .closeMobile {
+    display: none;
+    width: 19.09px;
+    height: 19.09px;
+    background-image: url("../assets/shared/icon-close.svg");
+    z-index: 1;
+    position: absolute;
+    left: 210.45px;
+    top: 33.95px;
+  }
+  .bar {
+    position: absolute;
+    width: 473px;
+    height: 1px;
+    left: 327px;
+    top: 115px;
+    background: #ffffff;
+    mix-blend-mode: normal;
+    opacity: 0.25;
+    z-index: 1;
+  }
+}/*# sourceMappingURL=styledestination.css.map */

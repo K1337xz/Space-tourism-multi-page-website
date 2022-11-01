@@ -154,6 +154,193 @@
     top: 33.95px;
   }
 }
+@media (min-width: 992px) {
+  header {
+    width: 100%;
+    height: 25vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  nav {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+  nav .mainNavbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0;
+    margin-top: 4rem;
+  }
+  nav .mainNavbar .openMobile {
+    display: none;
+    background-image: url("../assets/shared/icon-hamburger.svg");
+    width: 24px;
+    height: 21px;
+  }
+  .logoWrapper {
+    margin-left: 5rem;
+  }
+  .navItems {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 11vh;
+    width: 60%;
+    background: rgba(255, 255, 255, 0.04);
+    -webkit-backdrop-filter: blur(40.7742px);
+            backdrop-filter: blur(40.7742px);
+    gap: 5rem;
+    font-family: "Barlow Condensed", sans-serif;
+    position: relative;
+  }
+  .navItems li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    margin-left: 1rem;
+  }
+  .navItems li:hover {
+    height: 11vh;
+    border-bottom: 3px solid hsl(0deg, 0%, 100%);
+  }
+  .navItems li a {
+    text-decoration: none;
+    color: white;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 2.3625px;
+    text-transform: uppercase;
+  }
+  .navItems li span {
+    display: inline;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 2.7px;
+  }
+  .navItems .cls {
+    display: none;
+    width: 100%;
+    height: 12%;
+  }
+  .navItems .cls .closeMobile {
+    display: none;
+    width: 19.09px;
+    height: 19.09px;
+    background-image: url("../assets/shared/icon-close.svg");
+    z-index: 1;
+    position: absolute;
+    left: 210.45px;
+    top: 33.95px;
+  }
+}
+@media (min-width: 1200px) {
+  header {
+    width: 100%;
+    height: 25vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  nav {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+  nav .mainNavbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0;
+    margin-top: 4rem;
+  }
+  nav .mainNavbar .openMobile {
+    display: none;
+    background-image: url("../assets/shared/icon-hamburger.svg");
+    width: 24px;
+    height: 21px;
+  }
+  .logoWrapper {
+    margin-left: 5rem;
+  }
+  .navItems {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 11vh;
+    width: 60%;
+    background: rgba(255, 255, 255, 0.04);
+    -webkit-backdrop-filter: blur(40.7742px);
+            backdrop-filter: blur(40.7742px);
+    gap: 5rem;
+    font-family: "Barlow Condensed", sans-serif;
+    position: relative;
+  }
+  .navItems li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    margin-left: 1rem;
+  }
+  .navItems li:hover {
+    height: 11vh;
+    border-bottom: 3px solid hsl(0deg, 0%, 100%);
+  }
+  .navItems li a {
+    text-decoration: none;
+    color: white;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 2.3625px;
+    text-transform: uppercase;
+  }
+  .navItems li span {
+    display: inline;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 2.7px;
+  }
+  .navItems .cls {
+    display: none;
+    width: 100%;
+    height: 12%;
+  }
+  .navItems .cls .closeMobile {
+    display: none;
+    width: 19.09px;
+    height: 19.09px;
+    background-image: url("../assets/shared/icon-close.svg");
+    z-index: 1;
+    position: absolute;
+    left: 210.45px;
+    top: 33.95px;
+  }
+  .bar {
+    position: absolute;
+    width: 473px;
+    height: 1px;
+    left: 327px;
+    top: 115px;
+    background: #ffffff;
+    mix-blend-mode: normal;
+    opacity: 0.25;
+    z-index: 1;
+  }
+}
 * {
   box-sizing: border-box;
   padding: 0;
@@ -208,6 +395,32 @@
     color: hsl(230deg, 35%, 7%);
     font-family: "Bellefair", serif;
     font-weight: 400;
+    font-size: 32px;
+    line-height: 37px;
+    letter-spacing: 2px;
+  }
+}
+@media (min-width: 992px) {
+  .rightButton {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  .rightButton .circle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 274px;
+    height: 274px;
+    border-radius: 100%;
+    background-color: hsl(0deg, 0%, 100%);
+    cursor: pointer;
+  }
+  .rightButton .circle a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: hsl(230deg, 35%, 7%);
+    font-family: "Bellefair", serif;
     font-size: 32px;
     line-height: 37px;
     letter-spacing: 2px;
@@ -305,6 +518,100 @@
     line-height: 25px;
     margin-left: auto;
     margin-right: auto;
+  }
+  .leftContent .topContent {
+    background-color: rgba(0, 0, 0, 0);
+    height: 65%;
+  }
+}
+@media (min-width: 992px) {
+  body {
+    height: 100vh;
+    background-image: url("../assets/home/background-home-desktop.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    height: 75%;
+  }
+  .leftContent p:first-child {
+    color: hsl(231deg, 79%, 90%);
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 34px;
+    letter-spacing: 4.725px;
+    font-family: "Barlow Condensed", sans-serif;
+  }
+  .leftContent h1 {
+    color: hsl(0deg, 0%, 100%);
+    text-transform: uppercase;
+    font-family: "Bellefair", serif;
+    font-weight: 400;
+    font-size: 150px;
+    line-height: 172px;
+  }
+  .leftContent p:last-child {
+    width: 52%;
+    text-align: left;
+    color: hsl(231deg, 79%, 90%);
+    font-family: "Barlow", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 32px;
+  }
+  .leftContent .topContent {
+    background-color: rgba(0, 0, 0, 0);
+    height: 65%;
+  }
+}
+@media (min-width: 1200px) {
+  body {
+    height: 100vh;
+    background-image: url("../assets/home/background-home-desktop.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    height: 75%;
+  }
+  .leftContent p:first-child {
+    color: hsl(231deg, 79%, 90%);
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 34px;
+    letter-spacing: 4.725px;
+    font-family: "Barlow Condensed", sans-serif;
+  }
+  .leftContent h1 {
+    color: hsl(0deg, 0%, 100%);
+    text-transform: uppercase;
+    font-family: "Bellefair", serif;
+    font-weight: 400;
+    font-size: 150px;
+    line-height: 172px;
+  }
+  .leftContent p:last-child {
+    width: 52%;
+    text-align: left;
+    color: hsl(231deg, 79%, 90%);
+    font-family: "Barlow", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 32px;
   }
   .leftContent .topContent {
     background-color: rgba(0, 0, 0, 0);

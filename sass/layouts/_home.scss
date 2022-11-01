@@ -109,3 +109,102 @@
 		}
 	}
 }
+
+@include lg {
+	body {
+		height: 100vh;
+		background-image: url("../assets/home/background-home-desktop.jpg");
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+	.container {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: space-between;
+		text-align: center;
+		height: 75%;
+	}
+	.leftContent {
+		p:first-child {
+			color: $ptext;
+			text-transform: uppercase;
+			font-weight: 400;
+			font-size: 28px;
+			line-height: 34px;
+			letter-spacing: 4.725px;
+			font-family: $barlowCondensed;
+		}
+		h1 {
+			color: $h1text;
+			text-transform: uppercase;
+			font-family: $bellefair;
+			font-weight: 400;
+			font-size: 150px;
+			line-height: 172px;
+		}
+		p:last-child {
+			width: 52%;
+			text-align: left;
+			color: $ptext;
+			font-family: $barlow;
+			font-style: normal;
+			font-weight: 400;
+			font-size: 18px;
+			line-height: 32px;
+		}
+		.topContent {
+			background-color: rgba(0, 0, 0, 0);
+			height: 65%;
+		}
+	}
+}
+@include xl {
+	body {
+		height: 100vh;
+		background-image: url("../assets/home/background-home-desktop.jpg");
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+	.container {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: space-between;
+		text-align: center;
+		height: 75%;
+	}
+	.leftContent {
+		p:first-child {
+			color: $ptext;
+			text-transform: uppercase;
+			font-weight: 400;
+			font-size: 28px;
+			line-height: 34px;
+			letter-spacing: 4.725px;
+			font-family: $barlowCondensed;
+		}
+		h1 {
+			color: $h1text;
+			text-transform: uppercase;
+			font-family: $bellefair;
+			font-weight: 400;
+			font-size: 150px;
+			line-height: 172px;
+		}
+		p:last-child {
+			width: 52%;
+			text-align: left;
+			color: $ptext;
+			font-family: $barlow;
+			font-style: normal;
+			font-weight: 400;
+			font-size: 18px;
+			line-height: 32px;
+		}
+		.topContent {
+			background-color: rgba(0, 0, 0, 0);
+			height: 65%;
+		}
+	}
+}
