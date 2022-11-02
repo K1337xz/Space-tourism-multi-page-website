@@ -9,9 +9,229 @@
 
 @include sm {
 	body {
-		height: 100vh;
+		height: 100%;
 		background-image: url("../assets/destination/background-destination-mobile.jpg");
 		background-repeat: no-repeat;
 		background-size: cover;
+	}
+	.leftContent {
+		height: 40vh;
+		p {
+			font-family: $barlowCondensed;
+			font-weight: 400;
+			font-size: 16px;
+			line-height: 19px;
+			letter-spacing: 2.7px;
+			text-transform: uppercase;
+			text-align: center;
+			color: $h1text;
+			span {
+				font-style: normal;
+				font-weight: 700;
+				font-size: 16px;
+				line-height: 19px;
+				letter-spacing: 2.7px;
+				color: #ffffff;
+				mix-blend-mode: normal;
+				opacity: 0.25;
+			}
+		}
+	}
+	.planetImage {
+		width: 100%;
+		height: 20%;
+		margin-top: 2rem;
+	}
+	picture {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		img {
+			width: 170px;
+			height: 170px;
+		}
+	}
+	.destinationDescribe {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		margin-top: 2rem;
+		h1 {
+			font-family: $bellefair;
+			font-style: normal;
+			font-weight: 400;
+			font-size: 56px;
+			line-height: 64px;
+			text-transform: uppercase;
+			color: $h1text;
+		}
+		.descriebPlanet {
+			font-style: normal;
+			font-weight: 400;
+			font-size: 15px;
+			font-family: $barlow;
+			line-height: 25px;
+			color: $ptext;
+			margin-left: 1rem;
+			margin-right: 2rem;
+		}
+		span {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			width: 327px;
+			height: 1px;
+			background-color: $span;
+		}
+	}
+	.namewithdescribe {
+		height: 35vh;
+	}
+	.lowerInformations {
+		margin-top: 1rem;
+		text-align: center;
+		p {
+			font-family: $barlowCondensed;
+			font-style: normal;
+			font-weight: 400;
+			font-size: 14px;
+			line-height: 17px;
+			text-align: center;
+			letter-spacing: 2.3625px;
+			text-transform: uppercase;
+			color: $ptext;
+			margin-top: 1rem;
+		}
+		h2 {
+			margin-top: 1rem;
+			font-family: $bellefair;
+			color: $h1text;
+			font-style: normal;
+			font-weight: 400;
+			font-size: 28px;
+			line-height: 32px;
+			text-align: center;
+			text-transform: uppercase;
+		}
+	}
+}
+@include md {
+	body {
+		height: 100%;
+		background-image: url("../assets/destination/background-destination-tablet.jpg");
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+	.leftContent {
+		height: 40vh;
+		p {
+			font-family: $barlowCondensed;
+			font-weight: 400;
+			font-size: 20px;
+			line-height: 24px;
+			letter-spacing: 3.375px;
+			text-transform: uppercase;
+			text-align: left;
+			margin-left: 2rem;
+			color: $h1text;
+			span {
+				font-style: normal;
+				font-weight: 700;
+				font-size: 20px;
+				line-height: 24px;
+				letter-spacing: 3.375px;
+				color: #ffffff;
+				mix-blend-mode: normal;
+				opacity: 0.25;
+			}
+		}
+	}
+	.rightContent {
+		width: 100%;
+		height: 41vh;
+	}
+	.planetImage {
+		width: 100%;
+		height: 20%;
+		margin-top: 2rem;
+	}
+	picture {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		img {
+			width: 300px;
+			height: 300px;
+		}
+	}
+	.destinationDescribe {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		margin-top: 2rem;
+		h1 {
+			font-family: $bellefair;
+			font-style: normal;
+			font-weight: 400;
+			font-size: 80px;
+			line-height: 92px;
+			text-transform: uppercase;
+			color: $h1text;
+		}
+		.descriebPlanet {
+			font-style: normal;
+			font-weight: 400;
+			font-size: 15px;
+			font-family: $barlow;
+			line-height: 25px;
+			color: $ptext;
+			margin-left: 7rem;
+			margin-right: 7rem;
+		}
+		span {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			width: 573px;
+			height: 1px;
+			background-color: $span;
+		}
+	}
+	.namewithdescribe {
+		height: 20vh;
+	}
+
+	.lowerInformations {
+		display: flex;
+		gap: 4rem;
+		margin-top: 1rem;
+		text-align: center;
+		p {
+			font-family: $barlowCondensed;
+			font-style: normal;
+			font-weight: 400;
+			font-size: 14px;
+			line-height: 17px;
+			text-align: center;
+			letter-spacing: 2.3625px;
+			text-transform: uppercase;
+			color: $ptext;
+			margin-top: 1rem;
+		}
+		h2 {
+			margin-top: 1rem;
+			font-family: $bellefair;
+			color: $h1text;
+			font-style: normal;
+			font-weight: 400;
+			font-size: 28px;
+			line-height: 32px;
+			text-align: center;
+			text-transform: uppercase;
+		}
 	}
 }

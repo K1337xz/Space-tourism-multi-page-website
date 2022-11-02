@@ -79,6 +79,22 @@
 			}
 		}
 	}
+	//nav destiantion
+	.destinationBar {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		gap: 2rem;
+		font-family: $barlowCondensed;
+		li {
+			list-style: none;
+			a {
+				text-decoration: none;
+				text-transform: uppercase;
+				color: $ptext;
+			}
+		}
+	}
 }
 @include md {
 	header {
@@ -154,6 +170,28 @@
 				position: absolute;
 				left: 210.45px;
 				top: 33.95px;
+			}
+		}
+	}
+	//destination nav
+	.destinationBar {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		gap: 2rem;
+		font-family: $barlowCondensed;
+		margin-top: 1rem;
+		li {
+			list-style: none;
+			a {
+				font-style: normal;
+				font-weight: 400;
+				font-size: 16px;
+				line-height: 19px;
+				letter-spacing: 2.7px;
+				text-decoration: none;
+				text-transform: uppercase;
+				color: $ptext;
 			}
 		}
 	}

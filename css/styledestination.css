@@ -75,6 +75,21 @@
     left: 210.45px;
     top: 33.95px;
   }
+  .destinationBar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2rem;
+    font-family: "Barlow Condensed", sans-serif;
+  }
+  .destinationBar li {
+    list-style: none;
+  }
+  .destinationBar li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: hsl(231deg, 79%, 90%);
+  }
 }
 @media (min-width: 600px) {
   header {
@@ -152,6 +167,27 @@
     position: absolute;
     left: 210.45px;
     top: 33.95px;
+  }
+  .destinationBar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2rem;
+    font-family: "Barlow Condensed", sans-serif;
+    margin-top: 1rem;
+  }
+  .destinationBar li {
+    list-style: none;
+  }
+  .destinationBar li a {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 2.7px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: hsl(231deg, 79%, 90%);
   }
 }
 @media (min-width: 992px) {
@@ -428,9 +464,228 @@
 }
 @media (max-width: 600px) {
   body {
-    height: 100vh;
+    height: 100%;
     background-image: url("../assets/destination/background-destination-mobile.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+  }
+  .leftContent {
+    height: 40vh;
+  }
+  .leftContent p {
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 2.7px;
+    text-transform: uppercase;
+    text-align: center;
+    color: hsl(0deg, 0%, 100%);
+  }
+  .leftContent p span {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 2.7px;
+    color: #ffffff;
+    mix-blend-mode: normal;
+    opacity: 0.25;
+  }
+  .planetImage {
+    width: 100%;
+    height: 20%;
+    margin-top: 2rem;
+  }
+  picture {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  picture img {
+    width: 170px;
+    height: 170px;
+  }
+  .destinationDescribe {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 2rem;
+  }
+  .destinationDescribe h1 {
+    font-family: "Bellefair", serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 56px;
+    line-height: 64px;
+    text-transform: uppercase;
+    color: hsl(0deg, 0%, 100%);
+  }
+  .destinationDescribe .descriebPlanet {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    font-family: "Barlow", sans-serif;
+    line-height: 25px;
+    color: hsl(231deg, 79%, 90%);
+    margin-left: 1rem;
+    margin-right: 2rem;
+  }
+  .destinationDescribe span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 327px;
+    height: 1px;
+    background-color: hsl(231deg, 15%, 26%);
+  }
+  .namewithdescribe {
+    height: 35vh;
+  }
+  .lowerInformations {
+    margin-top: 1rem;
+    text-align: center;
+  }
+  .lowerInformations p {
+    font-family: "Barlow Condensed", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    letter-spacing: 2.3625px;
+    text-transform: uppercase;
+    color: hsl(231deg, 79%, 90%);
+    margin-top: 1rem;
+  }
+  .lowerInformations h2 {
+    margin-top: 1rem;
+    font-family: "Bellefair", serif;
+    color: hsl(0deg, 0%, 100%);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 32px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+}
+@media (min-width: 600px) {
+  body {
+    height: 100%;
+    background-image: url("../assets/destination/background-destination-tablet.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .leftContent {
+    height: 40vh;
+  }
+  .leftContent p {
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 3.375px;
+    text-transform: uppercase;
+    text-align: left;
+    margin-left: 2rem;
+    color: hsl(0deg, 0%, 100%);
+  }
+  .leftContent p span {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 3.375px;
+    color: #ffffff;
+    mix-blend-mode: normal;
+    opacity: 0.25;
+  }
+  .rightContent {
+    width: 100%;
+    height: 41vh;
+  }
+  .planetImage {
+    width: 100%;
+    height: 20%;
+    margin-top: 2rem;
+  }
+  picture {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  picture img {
+    width: 300px;
+    height: 300px;
+  }
+  .destinationDescribe {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 2rem;
+  }
+  .destinationDescribe h1 {
+    font-family: "Bellefair", serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 80px;
+    line-height: 92px;
+    text-transform: uppercase;
+    color: hsl(0deg, 0%, 100%);
+  }
+  .destinationDescribe .descriebPlanet {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    font-family: "Barlow", sans-serif;
+    line-height: 25px;
+    color: hsl(231deg, 79%, 90%);
+    margin-left: 7rem;
+    margin-right: 7rem;
+  }
+  .destinationDescribe span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 573px;
+    height: 1px;
+    background-color: hsl(231deg, 15%, 26%);
+  }
+  .namewithdescribe {
+    height: 20vh;
+  }
+  .lowerInformations {
+    display: flex;
+    gap: 4rem;
+    margin-top: 1rem;
+    text-align: center;
+  }
+  .lowerInformations p {
+    font-family: "Barlow Condensed", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    letter-spacing: 2.3625px;
+    text-transform: uppercase;
+    color: hsl(231deg, 79%, 90%);
+    margin-top: 1rem;
+  }
+  .lowerInformations h2 {
+    margin-top: 1rem;
+    font-family: "Bellefair", serif;
+    color: hsl(0deg, 0%, 100%);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 32px;
+    text-align: center;
+    text-transform: uppercase;
   }
 }/*# sourceMappingURL=styledestination.css.map */
