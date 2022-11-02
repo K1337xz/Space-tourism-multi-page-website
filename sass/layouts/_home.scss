@@ -75,31 +75,32 @@
 	}
 	.leftContent {
 		p:first-child {
-			font-size: 16px;
 			color: $ptext;
 			text-transform: uppercase;
-			line-height: 19px;
-			letter-spacing: 2.7px;
-			font-style: normal;
 			font-weight: 400;
+			font-size: 20px;
+			line-height: 24px;
+			text-align: center;
+			letter-spacing: 3.375px;
 			font-family: $barlowCondensed;
 		}
 		h1 {
 			color: $h1text;
-			font-size: 80px;
+			font-weight: 400;
+			font-size: 150px;
+			line-height: 150px;
 			text-transform: uppercase;
 			font-family: $bellefair;
-			line-height: 100px;
-			font-weight: 400;
+			margin-top: 2rem;
 		}
 		p:last-child {
-			width: 85%;
+			width: 54%;
 			color: $ptext;
 			font-family: $barlow;
 			font-style: normal;
 			font-weight: 400;
-			font-size: 15px;
-			line-height: 25px;
+			font-size: 16px;
+			line-height: 28px;
 			margin-left: auto;
 			margin-right: auto;
 		}
