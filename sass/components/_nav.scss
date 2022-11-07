@@ -43,6 +43,7 @@
 		font-family: $barlowCondensed;
 		transition: width 0.5s linear;
 		overflow-x: hidden;
+		z-index: 3;
 		li {
 			list-style: none;
 			margin-left: 2rem;
@@ -92,6 +93,78 @@
 				text-decoration: none;
 				text-transform: uppercase;
 				color: $ptext;
+			}
+		}
+	}
+
+	//crewNav
+	.destinationNav {
+		width: 100%;
+		height: 100%;
+		background: #34495e;
+		display: flex;
+	}
+
+	.dotsNav {
+		position: relative;
+		display: inline-block;
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		cursor: default;
+		.active {
+			a {
+				-webkit-transform: scale3d(1, 1, 1);
+				transform: scale3d(1, 1, 1);
+				mix-blend-mode: normal;
+				opacity: 1;
+				&:after {
+					height: 100%;
+				}
+			}
+		}
+
+		li {
+			position: relative;
+			display: block;
+			float: left;
+			margin: 0 7px;
+			width: 10px;
+			height: 10px;
+			cursor: pointer;
+			border-radius: 50%;
+
+			a {
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				outline: none;
+				border-radius: 50%;
+				text-indent: -999em;
+				cursor: pointer;
+				position: absolute;
+				overflow: hidden;
+				background-color: $h1text;
+				-webkit-transition: all 0.3s ease;
+				transition: all 0.3s ease;
+				-webkit-transform: scale3d(1, 1, 1);
+				transform: scale3d(1, 1, 1);
+				mix-blend-mode: normal;
+				opacity: 0.17;
+
+				&:after {
+					content: "";
+					position: absolute;
+					bottom: 0;
+					height: 0;
+					left: 0;
+					width: 100%;
+					background-color: #fff;
+					box-shadow: 0 0 1px #fff;
+					-webkit-transition: height 0.3s ease;
+					transition: height 0.3s ease;
+				}
 			}
 		}
 	}
@@ -282,6 +355,17 @@
 			}
 		}
 	}
+	.bar {
+		position: absolute;
+		width: 473px;
+		height: 1px;
+		left: 327px;
+		top: 115px;
+		background: #ffffff;
+		mix-blend-mode: normal;
+		opacity: 0.25;
+		z-index: 1;
+	}
 }
 @include xl {
 	header {
@@ -370,14 +454,39 @@
 		}
 	}
 	.bar {
-		position: absolute;
 		width: 473px;
 		height: 1px;
-		left: 327px;
+		left: 331px;
 		top: 115px;
 		background: #ffffff;
 		mix-blend-mode: normal;
 		opacity: 0.25;
-		z-index: 1;
+	}
+	//destination nav
+	.destinationBar {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		gap: 2rem;
+		font-family: $barlowCondensed;
+		margin-top: 1rem;
+		height: 2vh;
+		li {
+			list-style: none;
+			&:hover {
+				height: 3vh;
+				border-bottom: 3px solid $h1text;
+			}
+			a {
+				font-style: normal;
+				font-weight: 400;
+				font-size: 16px;
+				line-height: 19px;
+				letter-spacing: 2.7px;
+				text-decoration: none;
+				text-transform: uppercase;
+				color: $ptext;
+			}
+		}
 	}
 }

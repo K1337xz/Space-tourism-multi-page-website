@@ -39,6 +39,7 @@
     font-family: "Barlow Condensed", sans-serif;
     transition: width 0.5s linear;
     overflow-x: hidden;
+    z-index: 3;
   }
   .navItems li {
     list-style: none;
@@ -89,6 +90,66 @@
     text-decoration: none;
     text-transform: uppercase;
     color: hsl(231deg, 79%, 90%);
+  }
+  .destinationNav {
+    width: 100%;
+    height: 100%;
+    background: #34495e;
+    display: flex;
+  }
+  .dotsNav {
+    position: relative;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    cursor: default;
+  }
+  .dotsNav .active a {
+    transform: scale3d(1, 1, 1);
+    mix-blend-mode: normal;
+    opacity: 1;
+  }
+  .dotsNav .active a:after {
+    height: 100%;
+  }
+  .dotsNav li {
+    position: relative;
+    display: block;
+    float: left;
+    margin: 0 7px;
+    width: 10px;
+    height: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+  }
+  .dotsNav li a {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    outline: none;
+    border-radius: 50%;
+    text-indent: -999em;
+    cursor: pointer;
+    position: absolute;
+    overflow: hidden;
+    background-color: hsl(0deg, 0%, 100%);
+    transition: all 0.3s ease;
+    transform: scale3d(1, 1, 1);
+    mix-blend-mode: normal;
+    opacity: 0.17;
+  }
+  .dotsNav li a:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    height: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 0 1px #fff;
+    transition: height 0.3s ease;
   }
 }
 @media (min-width: 600px) {
@@ -277,6 +338,17 @@
     left: 210.45px;
     top: 33.95px;
   }
+  .bar {
+    position: absolute;
+    width: 473px;
+    height: 1px;
+    left: 327px;
+    top: 115px;
+    background: #ffffff;
+    mix-blend-mode: normal;
+    opacity: 0.25;
+    z-index: 1;
+  }
 }
 @media (min-width: 1200px) {
   header {
@@ -366,15 +438,39 @@
     top: 33.95px;
   }
   .bar {
-    position: absolute;
     width: 473px;
     height: 1px;
-    left: 327px;
+    left: 331px;
     top: 115px;
     background: #ffffff;
     mix-blend-mode: normal;
     opacity: 0.25;
-    z-index: 1;
+  }
+  .destinationBar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2rem;
+    font-family: "Barlow Condensed", sans-serif;
+    margin-top: 1rem;
+    height: 2vh;
+  }
+  .destinationBar li {
+    list-style: none;
+  }
+  .destinationBar li:hover {
+    height: 3vh;
+    border-bottom: 3px solid hsl(0deg, 0%, 100%);
+  }
+  .destinationBar li a {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 2.7px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: hsl(231deg, 79%, 90%);
   }
 }
 * {
@@ -469,10 +565,7 @@
     background-repeat: no-repeat;
     background-size: cover;
   }
-  .leftContent {
-    height: 40vh;
-  }
-  .leftContent p {
+  .container p {
     font-family: "Barlow Condensed", sans-serif;
     font-weight: 400;
     font-size: 16px;
@@ -482,7 +575,7 @@
     text-align: center;
     color: hsl(0deg, 0%, 100%);
   }
-  .leftContent p span {
+  .container p span {
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
@@ -491,6 +584,9 @@
     color: #ffffff;
     mix-blend-mode: normal;
     opacity: 0.25;
+  }
+  .leftContent {
+    height: 30vh;
   }
   .planetImage {
     width: 100%;
@@ -526,12 +622,12 @@
   .destinationDescribe .descriebPlanet {
     font-style: normal;
     font-weight: 400;
-    font-size: 15px;
+    font-size: 10px;
     font-family: "Barlow", sans-serif;
     line-height: 25px;
     color: hsl(231deg, 79%, 90%);
-    margin-left: 1rem;
-    margin-right: 2rem;
+    margin-left: 2rem;
+    margin-right: 1rem;
   }
   .destinationDescribe span {
     display: flex;
@@ -579,10 +675,7 @@
     background-repeat: no-repeat;
     background-size: cover;
   }
-  .leftContent {
-    height: 40vh;
-  }
-  .leftContent p {
+  .container p {
     font-family: "Barlow Condensed", sans-serif;
     font-weight: 400;
     font-size: 20px;
@@ -593,7 +686,7 @@
     margin-left: 2rem;
     color: hsl(0deg, 0%, 100%);
   }
-  .leftContent p span {
+  .container p span {
     font-style: normal;
     font-weight: 700;
     font-size: 20px;
@@ -602,6 +695,9 @@
     color: #ffffff;
     mix-blend-mode: normal;
     opacity: 0.25;
+  }
+  .leftContent {
+    height: 40vh;
   }
   .rightContent {
     width: 100%;
@@ -686,6 +782,142 @@
     font-size: 28px;
     line-height: 32px;
     text-align: center;
+    text-transform: uppercase;
+  }
+}
+@media (min-width: 1200px) {
+  body {
+    height: 100%;
+    background-image: url("../assets/destination/background-destination-desktop.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .container .topText p {
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 34px;
+    letter-spacing: 4.725px;
+    text-transform: uppercase;
+    color: hsl(0deg, 0%, 100%);
+    margin-left: 15rem;
+  }
+  .container .topText p span {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 34px;
+    letter-spacing: 4.725px;
+    color: #ffffff;
+    mix-blend-mode: normal;
+    opacity: 0.25;
+  }
+  .leftContent {
+    width: 50%;
+    height: 60vh;
+  }
+  .planetWrap {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 65vh;
+  }
+  .rightContent {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    height: 60vh;
+    flex: 1;
+  }
+  .planetImage {
+    width: 100%;
+    height: 20%;
+    margin-top: 2rem;
+  }
+  picture {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  picture img {
+    width: 445px;
+    height: 445px;
+  }
+  .destinationDescribe {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 2rem;
+  }
+  .destinationDescribe h1 {
+    font-family: "Bellefair", serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 100px;
+    line-height: 115px;
+    text-transform: uppercase;
+    color: hsl(0deg, 0%, 100%);
+  }
+  .destinationDescribe .descriebPlanet {
+    font-style: normal;
+    font-family: "Barlow", sans-serif;
+    color: hsl(231deg, 79%, 90%);
+    margin-left: 0;
+    margin-right: 20rem;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 32px;
+    text-transform: none;
+  }
+  .destinationDescribe span {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    width: 444px;
+    height: 1px;
+    margin-right: 32rem;
+    background-color: hsl(231deg, 15%, 26%);
+    background-color: hsl(231deg, 15%, 26%);
+  }
+  .namewithdescribe {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 30vh;
+  }
+  .lowerInformations {
+    display: flex;
+    gap: 4rem;
+    margin-top: 1rem;
+    width: 100%;
+    text-align: center;
+  }
+  .lowerInformations p {
+    font-family: "Barlow Condensed", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 2.3625px;
+    text-transform: uppercase;
+    color: hsl(231deg, 79%, 90%);
+    margin-top: 1rem;
+    margin-left: 0rem;
+    text-align: left;
+  }
+  .lowerInformations h2 {
+    margin-top: 1rem;
+    font-family: "Bellefair", serif;
+    color: hsl(0deg, 0%, 100%);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 32px;
+    text-transform: uppercase;
+    text-align: left;
     text-transform: uppercase;
   }
 }/*# sourceMappingURL=styledestination.css.map */

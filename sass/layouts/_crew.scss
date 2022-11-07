@@ -1,0 +1,63 @@
+@forward "../components/nav";
+@forward "../components/nav";
+@forward "../base/typography";
+@forward "../base/reset";
+@forward "../components/buttons";
+@use "../abstracts/brakepoints" as *;
+@use "../abstracts/colors" as *;
+@use "../base/typography" as *;
+
+@include sm {
+	body {
+		height: 100%;
+		background-image: url("../assets/crew/background-crew-mobile.jpg");
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+	.container {
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+		justify-content: center;
+	}
+	.topText {
+		p {
+			font-family: $barlowCondensed;
+			font-style: normal;
+			font-weight: 400;
+			font-size: 16px;
+			line-height: 19px;
+			letter-spacing: 2.7px;
+			text-transform: uppercase;
+			color: $h1text;
+			span {
+				font-style: normal;
+				font-weight: 700;
+				font-size: 16px;
+				line-height: 19px;
+				letter-spacing: 2.7px;
+				color: #ffffff;
+				mix-blend-mode: normal;
+				opacity: 0.25;
+			}
+		}
+	}
+	.pictureMember {
+		width: 80%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin-top: 2rem;
+		border-bottom: 2px solid $span;
+		margin-bottom: 2rem;
+		picture {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			img {
+				width: 177.12px;
+				height: 222px;
+			}
+		}
+	}
+}
