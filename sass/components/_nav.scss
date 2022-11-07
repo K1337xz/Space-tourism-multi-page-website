@@ -98,13 +98,6 @@
 	}
 
 	//crewNav
-	.destinationNav {
-		width: 100%;
-		height: 100%;
-		background: #34495e;
-		display: flex;
-	}
-
 	.dotsNav {
 		position: relative;
 		display: inline-block;
@@ -172,7 +165,7 @@
 @include md {
 	header {
 		width: 100%;
-		height: 17vh;
+		height: 15vh;
 		display: flex;
 		align-items: center;
 		justify-content: center;
@@ -265,6 +258,70 @@
 				text-decoration: none;
 				text-transform: uppercase;
 				color: $ptext;
+			}
+		}
+	}
+	//crewNav
+	.dotsNav {
+		position: relative;
+		display: inline-block;
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		cursor: default;
+		.active {
+			a {
+				-webkit-transform: scale3d(1, 1, 1);
+				transform: scale3d(1, 1, 1);
+				mix-blend-mode: normal;
+				opacity: 1;
+				&:after {
+					height: 100%;
+				}
+			}
+		}
+
+		li {
+			position: relative;
+			display: block;
+			float: left;
+			margin: 0 7px;
+			width: 10px;
+			height: 10px;
+			cursor: pointer;
+			border-radius: 50%;
+
+			a {
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				outline: none;
+				border-radius: 50%;
+				text-indent: -999em;
+				cursor: pointer;
+				position: absolute;
+				overflow: hidden;
+				background-color: $h1text;
+				-webkit-transition: all 0.3s ease;
+				transition: all 0.3s ease;
+				-webkit-transform: scale3d(1, 1, 1);
+				transform: scale3d(1, 1, 1);
+				mix-blend-mode: normal;
+				opacity: 0.17;
+
+				&:after {
+					content: "";
+					position: absolute;
+					bottom: 0;
+					height: 0;
+					left: 0;
+					width: 100%;
+					background-color: #fff;
+					box-shadow: 0 0 1px #fff;
+					-webkit-transition: height 0.3s ease;
+					transition: height 0.3s ease;
+				}
 			}
 		}
 	}
@@ -365,6 +422,70 @@
 		mix-blend-mode: normal;
 		opacity: 0.25;
 		z-index: 1;
+	}
+	//crewNav
+	.dotsNav {
+		position: relative;
+		display: inline-block;
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		cursor: default;
+		.active {
+			a {
+				-webkit-transform: scale3d(1, 1, 1);
+				transform: scale3d(1, 1, 1);
+				mix-blend-mode: normal;
+				opacity: 1;
+				&:after {
+					height: 100%;
+				}
+			}
+		}
+
+		li {
+			position: relative;
+			display: block;
+			float: left;
+			margin: 0 7px;
+			width: 10px;
+			height: 10px;
+			cursor: pointer;
+			border-radius: 50%;
+
+			a {
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				outline: none;
+				border-radius: 50%;
+				text-indent: -999em;
+				cursor: pointer;
+				position: absolute;
+				overflow: hidden;
+				background-color: $h1text;
+				-webkit-transition: all 0.3s ease;
+				transition: all 0.3s ease;
+				-webkit-transform: scale3d(1, 1, 1);
+				transform: scale3d(1, 1, 1);
+				mix-blend-mode: normal;
+				opacity: 0.17;
+
+				&:after {
+					content: "";
+					position: absolute;
+					bottom: 0;
+					height: 0;
+					left: 0;
+					width: 100%;
+					background-color: #fff;
+					box-shadow: 0 0 1px #fff;
+					-webkit-transition: height 0.3s ease;
+					transition: height 0.3s ease;
+				}
+			}
+		}
 	}
 }
 @include xl {
@@ -486,6 +607,70 @@
 				text-decoration: none;
 				text-transform: uppercase;
 				color: $ptext;
+			}
+		}
+	}
+	//crewNav
+	.dotsNav {
+		position: relative;
+		display: inline-block;
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		cursor: default;
+		.active {
+			a {
+				-webkit-transform: scale3d(1, 1, 1);
+				transform: scale3d(1, 1, 1);
+				mix-blend-mode: normal;
+				opacity: 1;
+				&:after {
+					height: 100%;
+				}
+			}
+		}
+
+		li {
+			position: relative;
+			display: block;
+			float: left;
+			margin: 0 7px;
+			width: 10px;
+			height: 10px;
+			cursor: pointer;
+			border-radius: 50%;
+
+			a {
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				outline: none;
+				border-radius: 50%;
+				text-indent: -999em;
+				cursor: pointer;
+				position: absolute;
+				overflow: hidden;
+				background-color: $h1text;
+				-webkit-transition: all 0.3s ease;
+				transition: all 0.3s ease;
+				-webkit-transform: scale3d(1, 1, 1);
+				transform: scale3d(1, 1, 1);
+				mix-blend-mode: normal;
+				opacity: 0.17;
+
+				&:after {
+					content: "";
+					position: absolute;
+					bottom: 0;
+					height: 0;
+					left: 0;
+					width: 100%;
+					background-color: #fff;
+					box-shadow: 0 0 1px #fff;
+					-webkit-transition: height 0.3s ease;
+					transition: height 0.3s ease;
+				}
 			}
 		}
 	}

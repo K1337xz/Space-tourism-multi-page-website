@@ -150,11 +150,11 @@
 		}
 	}
 	.leftContent {
-		height: 40vh;
+		height: 35vh;
 	}
 	.rightContent {
 		width: 100%;
-		height: 41vh;
+		height: 36vh;
 	}
 	.planetImage {
 		width: 100%;
@@ -195,6 +195,7 @@
 			color: $ptext;
 			margin-left: 7rem;
 			margin-right: 7rem;
+			text-align: center;
 		}
 		span {
 			display: flex;
@@ -206,7 +207,7 @@
 		}
 	}
 	.namewithdescribe {
-		height: 20vh;
+		height: 23vh;
 	}
 
 	.lowerInformations {

@@ -9,10 +9,11 @@
 
 @include sm {
 	body {
-		height: 100%;
-		background-image: url("../assets/crew/background-crew-mobile.jpg");
+		height: 100vh;
+		background-image: url("../assets/crew/background-crew-tablet.jpg");
 		background-repeat: no-repeat;
 		background-size: cover;
+		overflow: hidden;
 	}
 	.container {
 		display: flex;
@@ -57,6 +58,163 @@
 			img {
 				width: 177.12px;
 				height: 222px;
+			}
+		}
+	}
+	.lowerContent {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	.contentCrew {
+		text-align: center;
+		margin-top: 1rem;
+		.role {
+			font-family: $bellefair;
+			font-style: normal;
+			font-weight: 400;
+			font-size: 16px;
+			line-height: 18px;
+			text-align: center;
+			text-transform: uppercase;
+			color: $h1text;
+			mix-blend-mode: normal;
+			opacity: 0.5;
+		}
+		.crewBio {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			h1 {
+				font-family: $bellefair;
+				font-style: normal;
+				font-weight: 400;
+				font-size: 24px;
+				line-height: 28px;
+				text-align: center;
+				text-transform: uppercase;
+				color: $h1text;
+				margin-top: 0.5rem;
+			}
+			p {
+				margin-top: 1rem;
+				font-family: $barlow;
+				font-style: normal;
+				font-weight: 400;
+				font-size: 15px;
+				line-height: 25px;
+				color: $ptext;
+				width: 80%;
+			}
+		}
+	}
+}
+@include md {
+	body {
+		height: 100vh;
+		background-image: url("../assets/crew/background-crew-mobile.jpg");
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+	.container {
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+		justify-content: center;
+	}
+	.topText {
+		display: flex;
+		width: 100%;
+		p {
+			font-family: $barlowCondensed;
+			font-weight: 400;
+			font-size: 20px;
+			line-height: 24px;
+			letter-spacing: 3.375px;
+			text-transform: uppercase;
+			text-align: left;
+			margin-left: 2rem;
+			color: $h1text;
+			span {
+				font-style: normal;
+				font-weight: 700;
+				font-size: 20px;
+				line-height: 24px;
+				letter-spacing: 3.375px;
+				color: #ffffff;
+				mix-blend-mode: normal;
+				opacity: 0.25;
+			}
+		}
+	}
+	.pictureMember {
+		width: 100%;
+		height: 57vh;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin-top: 2rem;
+		border-bottom: 0px solid $span;
+		margin-bottom: 2rem;
+		picture {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			img {
+				width: 456.37px;
+				height: 572px;
+			}
+		}
+	}
+	.lowerContent {
+		display: flex;
+		flex-direction: column-reverse;
+		justify-content: center;
+		align-items: center;
+	}
+	.contentCrew {
+		text-align: center;
+		margin-top: 1rem;
+		.role {
+			font-family: $bellefair;
+			font-style: normal;
+			font-weight: 400;
+			font-size: 24px;
+			line-height: 28px;
+			text-align: center;
+			text-transform: uppercase;
+			color: $h1text;
+			mix-blend-mode: normal;
+			opacity: 0.5;
+		}
+		.crewBio {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			margin-bottom: 1rem;
+			h1 {
+				font-family: $bellefair;
+				font-style: normal;
+				font-weight: 400;
+				font-size: 40px;
+				line-height: 46px;
+				text-align: center;
+				text-transform: uppercase;
+				color: $h1text;
+				margin-top: 0.5rem;
+			}
+			p {
+				margin-top: 1rem;
+				font-family: $barlow;
+				font-style: normal;
+				font-weight: 400;
+				font-size: 16px;
+				line-height: 28px;
+				color: $ptext;
+				width: 60%;
 			}
 		}
 	}
