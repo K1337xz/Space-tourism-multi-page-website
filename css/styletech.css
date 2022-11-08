@@ -1327,7 +1327,7 @@
     text-transform: uppercase;
     color: hsl(0deg, 0%, 100%);
     margin-bottom: 2rem;
-    margin-right: 3rem;
+    margin-right: -2rem;
   }
   .contentWrapper {
     display: flex;
