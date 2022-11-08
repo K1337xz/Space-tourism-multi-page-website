@@ -145,6 +145,57 @@
     box-shadow: 0 0 1px #fff;
     transition: height 0.3s ease;
   }
+  .techNav {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  .techNav .numberNav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    width: 100%;
+    height: 10vh;
+  }
+  .techNav .numberNav li {
+    list-style: none;
+    width: 40px;
+    height: 40px;
+    border: 1px solid hsl(231deg, 15%, 26%);
+    border-radius: 100%;
+    color: hsl(231deg, 15%, 26%);
+  }
+  .techNav .numberNav li.active {
+    background-color: hsl(0deg, 0%, 100%);
+  }
+  .techNav .numberNav li.active a {
+    color: hsl(230deg, 35%, 7%);
+    font-family: "Bellefair", serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    text-align: center;
+    letter-spacing: 1px;
+  }
+  .techNav .numberNav li a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    color: hsl(0deg, 0%, 100%);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: "Bellefair", serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    text-align: center;
+    letter-spacing: 1px;
+  }
 }
 @media (min-width: 600px) {
   header {
@@ -244,6 +295,11 @@
     text-transform: uppercase;
     color: hsl(231deg, 79%, 90%);
   }
+  .cellNav {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
   .dotsNav {
     position: relative;
     display: inline-block;
@@ -297,6 +353,57 @@
     background-color: #fff;
     box-shadow: 0 0 1px #fff;
     transition: height 0.3s ease;
+  }
+  .techNav {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  .techNav .numberNav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    width: 100%;
+    height: 15vh;
+  }
+  .techNav .numberNav li {
+    list-style: none;
+    width: 60px;
+    height: 60px;
+    border: 1px solid hsl(231deg, 15%, 26%);
+    border-radius: 100%;
+    color: hsl(231deg, 15%, 26%);
+  }
+  .techNav .numberNav li.active {
+    background-color: hsl(0deg, 0%, 100%);
+  }
+  .techNav .numberNav li.active a {
+    color: hsl(230deg, 35%, 7%);
+    font-family: "Bellefair", serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    letter-spacing: 1.5px;
+  }
+  .techNav .numberNav li a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    color: hsl(0deg, 0%, 100%);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: "Bellefair", serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    letter-spacing: 1.5px;
   }
 }
 @media (min-width: 992px) {
@@ -388,14 +495,19 @@
   }
   .bar {
     position: absolute;
-    width: 473px;
+    width: 25%;
     height: 1px;
-    left: 327px;
+    left: 18%;
     top: 115px;
     background: #ffffff;
     mix-blend-mode: normal;
     opacity: 0.25;
     z-index: 1;
+  }
+  .cellNav {
+    display: flex;
+    justify-content: flex-start;
+    width: 55%;
   }
   .dotsNav {
     position: relative;
@@ -418,8 +530,8 @@
     display: block;
     float: left;
     margin: 0 7px;
-    width: 10px;
-    height: 10px;
+    width: 15px;
+    height: 15px;
     cursor: pointer;
     border-radius: 50%;
   }
@@ -450,6 +562,61 @@
     background-color: #fff;
     box-shadow: 0 0 1px #fff;
     transition: height 0.3s ease;
+  }
+  .techNav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex: 1;
+  }
+  .techNav .numberNav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    width: 100%;
+    height: 10vh;
+  }
+  .techNav .numberNav li {
+    list-style: none;
+    width: 80px;
+    height: 80px;
+    border: 1px solid hsl(231deg, 15%, 26%);
+    border-radius: 100%;
+    color: hsl(231deg, 15%, 26%);
+  }
+  .techNav .numberNav li.active {
+    background-color: hsl(0deg, 0%, 100%);
+  }
+  .techNav .numberNav li.active a {
+    color: hsl(230deg, 35%, 7%);
+    font-family: "Bellefair", serif;
+    font-style: normal;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 37px;
+    text-align: center;
+    letter-spacing: 2px;
+  }
+  .techNav .numberNav li a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height: 80px;
+    color: hsl(0deg, 0%, 100%);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: "Bellefair", serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 37px;
+    text-align: center;
+    letter-spacing: 2px;
   }
 }
 @media (min-width: 1200px) {
@@ -540,9 +707,9 @@
     top: 33.95px;
   }
   .bar {
-    width: 473px;
+    width: 25%;
     height: 1px;
-    left: 331px;
+    left: 20%;
     top: 115px;
     background: #ffffff;
     mix-blend-mode: normal;
@@ -627,6 +794,61 @@
     background-color: #fff;
     box-shadow: 0 0 1px #fff;
     transition: height 0.3s ease;
+  }
+  .techNav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex: 1;
+  }
+  .techNav .numberNav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    width: 100%;
+    height: 10vh;
+  }
+  .techNav .numberNav li {
+    list-style: none;
+    width: 80px;
+    height: 80px;
+    border: 1px solid hsl(231deg, 15%, 26%);
+    border-radius: 100%;
+    color: hsl(231deg, 15%, 26%);
+  }
+  .techNav .numberNav li.active {
+    background-color: hsl(0deg, 0%, 100%);
+  }
+  .techNav .numberNav li.active a {
+    color: hsl(230deg, 35%, 7%);
+    font-family: "Bellefair", serif;
+    font-style: normal;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 37px;
+    text-align: center;
+    letter-spacing: 2px;
+  }
+  .techNav .numberNav li a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height: 80px;
+    color: hsl(0deg, 0%, 100%);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: "Bellefair", serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 37px;
+    text-align: center;
+    letter-spacing: 2px;
   }
 }
 * {
@@ -717,7 +939,7 @@
 @media (max-width: 600px) {
   body {
     height: 100vh;
-    background-image: url("../assets/crew/background-crew-tablet.jpg");
+    background-image: url("../assets/crew/background-crew-mobile.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     overflow: hidden;
@@ -772,6 +994,12 @@
     justify-content: center;
     align-items: center;
   }
+  .wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
   .contentCrew {
     text-align: center;
     margin-top: 1rem;
@@ -818,8 +1046,8 @@
 }
 @media (min-width: 600px) {
   body {
-    height: 100vh;
-    background-image: url("../assets/crew/background-crew-mobile.jpg");
+    height: 100%;
+    background-image: url("../assets/crew/background-crew-tablet.jpg");
     background-repeat: no-repeat;
     background-size: cover;
   }
@@ -879,6 +1107,12 @@
     justify-content: center;
     align-items: center;
   }
+  .wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column-reverse;
+  }
   .contentCrew {
     text-align: center;
     margin-top: 1rem;
@@ -922,5 +1156,239 @@
     line-height: 28px;
     color: hsl(231deg, 79%, 90%);
     width: 60%;
+  }
+}
+@media (min-width: 992px) {
+  body {
+    height: 100vh;
+    background-image: url("../assets/crew/background-crew-desktop.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    height: 70%;
+  }
+  .topText {
+    display: flex;
+    width: 100%;
+  }
+  .topText p {
+    font-family: "Barlow Condensed", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 34px;
+    letter-spacing: 4.725px;
+    text-transform: uppercase;
+    text-align: left;
+    margin-left: 11rem;
+    color: hsl(0deg, 0%, 100%);
+  }
+  .topText p span {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 34px;
+    letter-spacing: 4.725px;
+    color: #ffffff;
+    mix-blend-mode: normal;
+    opacity: 0.25;
+  }
+  .pictureMember {
+    width: 100%;
+    height: 57vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+    border-bottom: 0px solid hsl(231deg, 15%, 26%);
+    margin-bottom: 2rem;
+  }
+  .pictureMember picture {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .pictureMember picture img {
+    width: 568.07px;
+    height: 712px;
+  }
+  .lowerContent {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+  .wrap {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .contentCrew {
+    text-align: left;
+    margin-top: 1rem;
+  }
+  .contentCrew .role {
+    font-family: "Bellefair", serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 37px;
+    margin-left: 11.3rem;
+    text-align: left;
+    text-transform: uppercase;
+    color: hsl(0deg, 0%, 100%);
+    mix-blend-mode: normal;
+    opacity: 0.5;
+  }
+  .contentCrew .crewBio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    margin-bottom: 5rem;
+  }
+  .contentCrew .crewBio h1 {
+    font-family: "Bellefair", serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 56px;
+    line-height: 64px;
+    text-align: center;
+    text-transform: uppercase;
+    color: hsl(0deg, 0%, 100%);
+    margin-top: 0.5rem;
+    margin-left: 2rem;
+  }
+  .contentCrew .crewBio p {
+    margin-top: 1rem;
+    font-family: "Barlow", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 32px;
+    color: hsl(231deg, 79%, 90%);
+    width: 54%;
+  }
+}
+@media (min-width: 1200px) {
+  body {
+    height: 100vh;
+    background-image: url("../assets/crew/background-crew-desktop.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    height: 70%;
+  }
+  .topText {
+    display: flex;
+    width: 100%;
+  }
+  .topText p {
+    font-family: "Barlow Condensed", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 34px;
+    letter-spacing: 4.725px;
+    text-transform: uppercase;
+    text-align: left;
+    margin-left: 11rem;
+    color: hsl(0deg, 0%, 100%);
+  }
+  .topText p span {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 34px;
+    letter-spacing: 4.725px;
+    color: #ffffff;
+    mix-blend-mode: normal;
+    opacity: 0.25;
+  }
+  .pictureMember {
+    width: 100%;
+    height: 57vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+    border-bottom: 0px solid hsl(231deg, 15%, 26%);
+    margin-bottom: 2rem;
+  }
+  .pictureMember picture {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .pictureMember picture img {
+    width: 568.07px;
+    height: 712px;
+  }
+  .lowerContent {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+  .wrap {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .contentCrew {
+    text-align: left;
+    margin-top: 1rem;
+  }
+  .contentCrew .role {
+    font-family: "Bellefair", serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 37px;
+    margin-left: 11.3rem;
+    text-align: left;
+    text-transform: uppercase;
+    color: hsl(0deg, 0%, 100%);
+    mix-blend-mode: normal;
+    opacity: 0.5;
+  }
+  .contentCrew .crewBio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    margin-bottom: 5rem;
+  }
+  .contentCrew .crewBio h1 {
+    font-family: "Bellefair", serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 56px;
+    line-height: 64px;
+    text-align: center;
+    text-transform: uppercase;
+    color: hsl(0deg, 0%, 100%);
+    margin-top: 0.5rem;
+    margin-left: 2rem;
+  }
+  .contentCrew .crewBio p {
+    margin-top: 1rem;
+    font-family: "Barlow", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 32px;
+    color: hsl(231deg, 79%, 90%);
+    width: 54%;
   }
 }/*# sourceMappingURL=stylecrew.css.map */

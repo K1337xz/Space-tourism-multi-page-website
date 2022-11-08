@@ -161,6 +161,59 @@
 			}
 		}
 	}
+	//technology nav
+	.techNav {
+		display: flex;
+		justify-content: center;
+		width: 100%;
+
+		.numberNav {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			gap: 2rem;
+			width: 100%;
+			height: 10vh;
+			li {
+				list-style: none;
+				width: 40px;
+				height: 40px;
+				border: 1px solid $span;
+				border-radius: 100%;
+				color: $span;
+				&.active {
+					background-color: $h1text;
+					a {
+						color: hsla(230, 35%, 7%, 1);
+						font-family: $bellefair;
+						font-style: normal;
+						font-weight: 400;
+						font-size: 16px;
+						line-height: 18px;
+						text-align: center;
+						letter-spacing: 1px;
+					}
+				}
+				a {
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					width: 40px;
+					height: 40px;
+					color: $h1text;
+					text-decoration: none;
+					text-transform: uppercase;
+					font-family: $bellefair;
+					font-style: normal;
+					font-weight: 400;
+					font-size: 16px;
+					line-height: 18px;
+					text-align: center;
+					letter-spacing: 1px;
+				}
+			}
+		}
+	}
 }
 @include md {
 	header {
@@ -262,6 +315,11 @@
 		}
 	}
 	//crewNav
+	.cellNav {
+		display: flex;
+		justify-content: center;
+		width: 100%;
+	}
 	.dotsNav {
 		position: relative;
 		display: inline-block;
@@ -321,6 +379,59 @@
 					box-shadow: 0 0 1px #fff;
 					-webkit-transition: height 0.3s ease;
 					transition: height 0.3s ease;
+				}
+			}
+		}
+	}
+	//technology nav
+	.techNav {
+		display: flex;
+		justify-content: center;
+		width: 100%;
+
+		.numberNav {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			gap: 2rem;
+			width: 100%;
+			height: 15vh;
+			li {
+				list-style: none;
+				width: 60px;
+				height: 60px;
+				border: 1px solid $span;
+				border-radius: 100%;
+				color: $span;
+				&.active {
+					background-color: $h1text;
+					a {
+						color: hsla(230, 35%, 7%, 1);
+						font-family: $bellefair;
+						font-style: normal;
+						font-weight: 400;
+						font-size: 24px;
+						line-height: 28px;
+						text-align: center;
+						letter-spacing: 1.5px;
+					}
+				}
+				a {
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					width: 60px;
+					height: 60px;
+					color: $h1text;
+					text-decoration: none;
+					text-transform: uppercase;
+					font-family: $bellefair;
+					font-style: normal;
+					font-weight: 400;
+					font-size: 24px;
+					line-height: 28px;
+					text-align: center;
+					letter-spacing: 1.5px;
 				}
 			}
 		}
@@ -414,9 +525,9 @@
 	}
 	.bar {
 		position: absolute;
-		width: 473px;
+		width: 25%;
 		height: 1px;
-		left: 327px;
+		left: 18%;
 		top: 115px;
 		background: #ffffff;
 		mix-blend-mode: normal;
@@ -424,6 +535,11 @@
 		z-index: 1;
 	}
 	//crewNav
+	.cellNav {
+		display: flex;
+		justify-content: flex-start;
+		width: 55%;
+	}
 	.dotsNav {
 		position: relative;
 		display: inline-block;
@@ -448,8 +564,8 @@
 			display: block;
 			float: left;
 			margin: 0 7px;
-			width: 10px;
-			height: 10px;
+			width: 15px;
+			height: 15px;
 			cursor: pointer;
 			border-radius: 50%;
 
@@ -483,6 +599,62 @@
 					box-shadow: 0 0 1px #fff;
 					-webkit-transition: height 0.3s ease;
 					transition: height 0.3s ease;
+				}
+			}
+		}
+	}
+	//technology nav
+	.techNav {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		flex: 1;
+		.numberNav {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			gap: 2rem;
+			width: 100%;
+			height: 10vh;
+			li {
+				list-style: none;
+				width: 80px;
+				height: 80px;
+				border: 1px solid $span;
+				border-radius: 100%;
+				color: $span;
+				&.active {
+					background-color: $h1text;
+					a {
+						color: hsla(230, 35%, 7%, 1);
+						font-family: $bellefair;
+						font-style: normal;
+						font-style: normal;
+						font-weight: 400;
+						font-size: 32px;
+						line-height: 37px;
+						text-align: center;
+						letter-spacing: 2px;
+					}
+				}
+				a {
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					width: 80px;
+					height: 80px;
+					color: $h1text;
+					text-decoration: none;
+					text-transform: uppercase;
+					font-family: $bellefair;
+					font-style: normal;
+					font-weight: 400;
+					font-size: 32px;
+					line-height: 37px;
+					text-align: center;
+					letter-spacing: 2px;
 				}
 			}
 		}
@@ -575,9 +747,9 @@
 		}
 	}
 	.bar {
-		width: 473px;
+		width: 25%;
 		height: 1px;
-		left: 331px;
+		left: 20%;
 		top: 115px;
 		background: #ffffff;
 		mix-blend-mode: normal;
@@ -611,6 +783,7 @@
 		}
 	}
 	//crewNav
+
 	.dotsNav {
 		position: relative;
 		display: inline-block;
@@ -670,6 +843,62 @@
 					box-shadow: 0 0 1px #fff;
 					-webkit-transition: height 0.3s ease;
 					transition: height 0.3s ease;
+				}
+			}
+		}
+	}
+	//technology nav
+	.techNav {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		flex: 1;
+		.numberNav {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			gap: 2rem;
+			width: 100%;
+			height: 10vh;
+			li {
+				list-style: none;
+				width: 80px;
+				height: 80px;
+				border: 1px solid $span;
+				border-radius: 100%;
+				color: $span;
+				&.active {
+					background-color: $h1text;
+					a {
+						color: hsla(230, 35%, 7%, 1);
+						font-family: $bellefair;
+						font-style: normal;
+						font-style: normal;
+						font-weight: 400;
+						font-size: 32px;
+						line-height: 37px;
+						text-align: center;
+						letter-spacing: 2px;
+					}
+				}
+				a {
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					width: 80px;
+					height: 80px;
+					color: $h1text;
+					text-decoration: none;
+					text-transform: uppercase;
+					font-family: $bellefair;
+					font-style: normal;
+					font-weight: 400;
+					font-size: 32px;
+					line-height: 37px;
+					text-align: center;
+					letter-spacing: 2px;
 				}
 			}
 		}

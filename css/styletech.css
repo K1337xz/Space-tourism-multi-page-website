@@ -1,1 +1,1339 @@
-/*# sourceMappingURL=styletech.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Alata&family=Barlow&family=Barlow+Condensed&family=Bellefair&family=Inter:wght@400;700&family=Josefin+Sans:wght@300;400;700&family=Kumbh+Sans:wght@400;700&display=swap");
+@media (max-width: 600px) {
+  header {
+    width: 100%;
+    height: 17vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  nav {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+  nav .mainNavbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem;
+  }
+  nav .mainNavbar .openMobile {
+    display: block;
+    background-image: url("../assets/shared/icon-hamburger.svg");
+    width: 24px;
+    height: 21px;
+  }
+  .navItems {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 0%;
+    background: rgba(0, 0, 0, 0.37);
+    backdrop-filter: blur(40.7742px);
+    -webkit-backdrop-filter: blur(40.7742px);
+    gap: 2rem;
+    font-family: "Barlow Condensed", sans-serif;
+    transition: width 0.5s linear;
+    overflow-x: hidden;
+    z-index: 3;
+  }
+  .navItems li {
+    list-style: none;
+    margin-left: 2rem;
+  }
+  .navItems li a {
+    text-decoration: none;
+    color: white;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 2.7px;
+    text-transform: uppercase;
+  }
+  .navItems li span {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 2.7px;
+  }
+  .navItems .cls {
+    width: 100%;
+    height: 12%;
+  }
+  .navItems .cls .closeMobile {
+    display: block;
+    width: 19.09px;
+    height: 19.09px;
+    background-image: url("../assets/shared/icon-close.svg");
+    z-index: 1;
+    position: absolute;
+    left: 210.45px;
+    top: 33.95px;
+  }
+  .destinationBar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2rem;
+    font-family: "Barlow Condensed", sans-serif;
+  }
+  .destinationBar li {
+    list-style: none;
+  }
+  .destinationBar li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: hsl(231deg, 79%, 90%);
+  }
+  .dotsNav {
+    position: relative;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    cursor: default;
+  }
+  .dotsNav .active a {
+    transform: scale3d(1, 1, 1);
+    mix-blend-mode: normal;
+    opacity: 1;
+  }
+  .dotsNav .active a:after {
+    height: 100%;
+  }
+  .dotsNav li {
+    position: relative;
+    display: block;
+    float: left;
+    margin: 0 7px;
+    width: 10px;
+    height: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+  }
+  .dotsNav li a {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    outline: none;
+    border-radius: 50%;
+    text-indent: -999em;
+    cursor: pointer;
+    position: absolute;
+    overflow: hidden;
+    background-color: hsl(0deg, 0%, 100%);
+    transition: all 0.3s ease;
+    transform: scale3d(1, 1, 1);
+    mix-blend-mode: normal;
+    opacity: 0.17;
+  }
+  .dotsNav li a:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    height: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 0 1px #fff;
+    transition: height 0.3s ease;
+  }
+  .techNav {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  .techNav .numberNav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    width: 100%;
+    height: 10vh;
+  }
+  .techNav .numberNav li {
+    list-style: none;
+    width: 40px;
+    height: 40px;
+    border: 1px solid hsl(231deg, 15%, 26%);
+    border-radius: 100%;
+    color: hsl(231deg, 15%, 26%);
+  }
+  .techNav .numberNav li.active {
+    background-color: hsl(0deg, 0%, 100%);
+  }
+  .techNav .numberNav li.active a {
+    color: hsl(230deg, 35%, 7%);
+    font-family: "Bellefair", serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    text-align: center;
+    letter-spacing: 1px;
+  }
+  .techNav .numberNav li a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    color: hsl(0deg, 0%, 100%);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: "Bellefair", serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    text-align: center;
+    letter-spacing: 1px;
+  }
+}
+@media (min-width: 600px) {
+  header {
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  nav {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+  nav .mainNavbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem;
+  }
+  nav .mainNavbar .openMobile {
+    display: none;
+    background-image: url("../assets/shared/icon-hamburger.svg");
+    width: 24px;
+    height: 21px;
+  }
+  .navItems {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 9vh;
+    width: 60%;
+    background: rgba(255, 255, 255, 0.04);
+    -webkit-backdrop-filter: blur(40.7742px);
+            backdrop-filter: blur(40.7742px);
+    gap: 2rem;
+    font-family: "Barlow Condensed", sans-serif;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  .navItems li {
+    list-style: none;
+    margin-left: 1rem;
+  }
+  .navItems li a {
+    text-decoration: none;
+    color: white;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 2.3625px;
+    text-transform: uppercase;
+  }
+  .navItems li span {
+    display: none;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 2.7px;
+  }
+  .navItems .cls {
+    display: none;
+    width: 100%;
+    height: 12%;
+  }
+  .navItems .cls .closeMobile {
+    display: none;
+    width: 19.09px;
+    height: 19.09px;
+    background-image: url("../assets/shared/icon-close.svg");
+    z-index: 1;
+    position: absolute;
+    left: 210.45px;
+    top: 33.95px;
+  }
+  .destinationBar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2rem;
+    font-family: "Barlow Condensed", sans-serif;
+    margin-top: 1rem;
+  }
+  .destinationBar li {
+    list-style: none;
+  }
+  .destinationBar li a {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 2.7px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: hsl(231deg, 79%, 90%);
+  }
+  .cellNav {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  .dotsNav {
+    position: relative;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    cursor: default;
+  }
+  .dotsNav .active a {
+    transform: scale3d(1, 1, 1);
+    mix-blend-mode: normal;
+    opacity: 1;
+  }
+  .dotsNav .active a:after {
+    height: 100%;
+  }
+  .dotsNav li {
+    position: relative;
+    display: block;
+    float: left;
+    margin: 0 7px;
+    width: 10px;
+    height: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+  }
+  .dotsNav li a {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    outline: none;
+    border-radius: 50%;
+    text-indent: -999em;
+    cursor: pointer;
+    position: absolute;
+    overflow: hidden;
+    background-color: hsl(0deg, 0%, 100%);
+    transition: all 0.3s ease;
+    transform: scale3d(1, 1, 1);
+    mix-blend-mode: normal;
+    opacity: 0.17;
+  }
+  .dotsNav li a:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    height: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 0 1px #fff;
+    transition: height 0.3s ease;
+  }
+  .techNav {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  .techNav .numberNav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    width: 100%;
+    height: 15vh;
+  }
+  .techNav .numberNav li {
+    list-style: none;
+    width: 60px;
+    height: 60px;
+    border: 1px solid hsl(231deg, 15%, 26%);
+    border-radius: 100%;
+    color: hsl(231deg, 15%, 26%);
+  }
+  .techNav .numberNav li.active {
+    background-color: hsl(0deg, 0%, 100%);
+  }
+  .techNav .numberNav li.active a {
+    color: hsl(230deg, 35%, 7%);
+    font-family: "Bellefair", serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    letter-spacing: 1.5px;
+  }
+  .techNav .numberNav li a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    color: hsl(0deg, 0%, 100%);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: "Bellefair", serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    letter-spacing: 1.5px;
+  }
+}
+@media (min-width: 992px) {
+  header {
+    width: 100%;
+    height: 25vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  nav {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+  nav .mainNavbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0;
+    margin-top: 4rem;
+  }
+  nav .mainNavbar .openMobile {
+    display: none;
+    background-image: url("../assets/shared/icon-hamburger.svg");
+    width: 24px;
+    height: 21px;
+  }
+  .logoWrapper {
+    margin-left: 5rem;
+  }
+  .navItems {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 11vh;
+    width: 60%;
+    background: rgba(255, 255, 255, 0.04);
+    -webkit-backdrop-filter: blur(40.7742px);
+            backdrop-filter: blur(40.7742px);
+    gap: 5rem;
+    font-family: "Barlow Condensed", sans-serif;
+    position: relative;
+  }
+  .navItems li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    margin-left: 1rem;
+  }
+  .navItems li:hover {
+    height: 11vh;
+    border-bottom: 3px solid hsl(0deg, 0%, 100%);
+  }
+  .navItems li a {
+    text-decoration: none;
+    color: white;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 2.3625px;
+    text-transform: uppercase;
+  }
+  .navItems li span {
+    display: inline;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 2.7px;
+  }
+  .navItems .cls {
+    display: none;
+    width: 100%;
+    height: 12%;
+  }
+  .navItems .cls .closeMobile {
+    display: none;
+    width: 19.09px;
+    height: 19.09px;
+    background-image: url("../assets/shared/icon-close.svg");
+    z-index: 1;
+    position: absolute;
+    left: 210.45px;
+    top: 33.95px;
+  }
+  .bar {
+    position: absolute;
+    width: 25%;
+    height: 1px;
+    left: 18%;
+    top: 115px;
+    background: #ffffff;
+    mix-blend-mode: normal;
+    opacity: 0.25;
+    z-index: 1;
+  }
+  .cellNav {
+    display: flex;
+    justify-content: flex-start;
+    width: 55%;
+  }
+  .dotsNav {
+    position: relative;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    cursor: default;
+  }
+  .dotsNav .active a {
+    transform: scale3d(1, 1, 1);
+    mix-blend-mode: normal;
+    opacity: 1;
+  }
+  .dotsNav .active a:after {
+    height: 100%;
+  }
+  .dotsNav li {
+    position: relative;
+    display: block;
+    float: left;
+    margin: 0 7px;
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+    border-radius: 50%;
+  }
+  .dotsNav li a {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    outline: none;
+    border-radius: 50%;
+    text-indent: -999em;
+    cursor: pointer;
+    position: absolute;
+    overflow: hidden;
+    background-color: hsl(0deg, 0%, 100%);
+    transition: all 0.3s ease;
+    transform: scale3d(1, 1, 1);
+    mix-blend-mode: normal;
+    opacity: 0.17;
+  }
+  .dotsNav li a:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    height: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 0 1px #fff;
+    transition: height 0.3s ease;
+  }
+  .techNav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex: 1;
+  }
+  .techNav .numberNav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    width: 100%;
+    height: 10vh;
+  }
+  .techNav .numberNav li {
+    list-style: none;
+    width: 80px;
+    height: 80px;
+    border: 1px solid hsl(231deg, 15%, 26%);
+    border-radius: 100%;
+    color: hsl(231deg, 15%, 26%);
+  }
+  .techNav .numberNav li.active {
+    background-color: hsl(0deg, 0%, 100%);
+  }
+  .techNav .numberNav li.active a {
+    color: hsl(230deg, 35%, 7%);
+    font-family: "Bellefair", serif;
+    font-style: normal;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 37px;
+    text-align: center;
+    letter-spacing: 2px;
+  }
+  .techNav .numberNav li a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height: 80px;
+    color: hsl(0deg, 0%, 100%);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: "Bellefair", serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 37px;
+    text-align: center;
+    letter-spacing: 2px;
+  }
+}
+@media (min-width: 1200px) {
+  header {
+    width: 100%;
+    height: 25vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  nav {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+  nav .mainNavbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0;
+    margin-top: 4rem;
+  }
+  nav .mainNavbar .openMobile {
+    display: none;
+    background-image: url("../assets/shared/icon-hamburger.svg");
+    width: 24px;
+    height: 21px;
+  }
+  .logoWrapper {
+    margin-left: 5rem;
+  }
+  .navItems {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 11vh;
+    width: 60%;
+    background: rgba(255, 255, 255, 0.04);
+    -webkit-backdrop-filter: blur(40.7742px);
+            backdrop-filter: blur(40.7742px);
+    gap: 5rem;
+    font-family: "Barlow Condensed", sans-serif;
+    position: relative;
+  }
+  .navItems li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    margin-left: 1rem;
+  }
+  .navItems li:hover {
+    height: 11vh;
+    border-bottom: 3px solid hsl(0deg, 0%, 100%);
+  }
+  .navItems li a {
+    text-decoration: none;
+    color: white;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 2.3625px;
+    text-transform: uppercase;
+  }
+  .navItems li span {
+    display: inline;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 2.7px;
+  }
+  .navItems .cls {
+    display: none;
+    width: 100%;
+    height: 12%;
+  }
+  .navItems .cls .closeMobile {
+    display: none;
+    width: 19.09px;
+    height: 19.09px;
+    background-image: url("../assets/shared/icon-close.svg");
+    z-index: 1;
+    position: absolute;
+    left: 210.45px;
+    top: 33.95px;
+  }
+  .bar {
+    width: 25%;
+    height: 1px;
+    left: 20%;
+    top: 115px;
+    background: #ffffff;
+    mix-blend-mode: normal;
+    opacity: 0.25;
+  }
+  .destinationBar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2rem;
+    font-family: "Barlow Condensed", sans-serif;
+    margin-top: 1rem;
+    height: 2vh;
+  }
+  .destinationBar li {
+    list-style: none;
+  }
+  .destinationBar li:hover {
+    height: 3vh;
+    border-bottom: 3px solid hsl(0deg, 0%, 100%);
+  }
+  .destinationBar li a {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 2.7px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: hsl(231deg, 79%, 90%);
+  }
+  .dotsNav {
+    position: relative;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    cursor: default;
+  }
+  .dotsNav .active a {
+    transform: scale3d(1, 1, 1);
+    mix-blend-mode: normal;
+    opacity: 1;
+  }
+  .dotsNav .active a:after {
+    height: 100%;
+  }
+  .dotsNav li {
+    position: relative;
+    display: block;
+    float: left;
+    margin: 0 7px;
+    width: 10px;
+    height: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+  }
+  .dotsNav li a {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    outline: none;
+    border-radius: 50%;
+    text-indent: -999em;
+    cursor: pointer;
+    position: absolute;
+    overflow: hidden;
+    background-color: hsl(0deg, 0%, 100%);
+    transition: all 0.3s ease;
+    transform: scale3d(1, 1, 1);
+    mix-blend-mode: normal;
+    opacity: 0.17;
+  }
+  .dotsNav li a:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    height: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 0 1px #fff;
+    transition: height 0.3s ease;
+  }
+  .techNav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex: 1;
+  }
+  .techNav .numberNav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    width: 100%;
+    height: 10vh;
+  }
+  .techNav .numberNav li {
+    list-style: none;
+    width: 80px;
+    height: 80px;
+    border: 1px solid hsl(231deg, 15%, 26%);
+    border-radius: 100%;
+    color: hsl(231deg, 15%, 26%);
+  }
+  .techNav .numberNav li.active {
+    background-color: hsl(0deg, 0%, 100%);
+  }
+  .techNav .numberNav li.active a {
+    color: hsl(230deg, 35%, 7%);
+    font-family: "Bellefair", serif;
+    font-style: normal;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 37px;
+    text-align: center;
+    letter-spacing: 2px;
+  }
+  .techNav .numberNav li a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height: 80px;
+    color: hsl(0deg, 0%, 100%);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: "Bellefair", serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 37px;
+    text-align: center;
+    letter-spacing: 2px;
+  }
+}
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+@media (max-width: 600px) {
+  .rightButton {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  .rightButton .circle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    background-color: hsl(0deg, 0%, 100%);
+  }
+  .rightButton .circle a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: hsl(230deg, 35%, 7%);
+    font-family: "Bellefair", serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    letter-spacing: 1.25px;
+  }
+}
+@media (min-width: 600px) {
+  .rightButton {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  .rightButton .circle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 242px;
+    height: 242px;
+    border-radius: 100%;
+    background-color: hsl(0deg, 0%, 100%);
+  }
+  .rightButton .circle a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: hsl(230deg, 35%, 7%);
+    font-family: "Bellefair", serif;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 37px;
+    letter-spacing: 2px;
+  }
+}
+@media (min-width: 992px) {
+  .rightButton {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  .rightButton .circle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 274px;
+    height: 274px;
+    border-radius: 100%;
+    background-color: hsl(0deg, 0%, 100%);
+    cursor: pointer;
+  }
+  .rightButton .circle a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: hsl(230deg, 35%, 7%);
+    font-family: "Bellefair", serif;
+    font-size: 32px;
+    line-height: 37px;
+    letter-spacing: 2px;
+  }
+}
+@media (max-width: 600px) {
+  body {
+    height: 100vh;
+    background-image: url("../assets/technology/background-technology-mobile.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .topText p {
+    font-family: "Barlow Condensed", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 2.7px;
+    text-transform: uppercase;
+    color: hsl(0deg, 0%, 100%);
+  }
+  .topText p span {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 2.7px;
+    color: #ffffff;
+    mix-blend-mode: normal;
+    opacity: 0.25;
+  }
+  .mainWrapper {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .techImage {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3rem;
+    width: 100%;
+  }
+  .techImage picture {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .techImage picture img {
+    width: 375px;
+    height: 170px;
+  }
+  .techMainContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .techMainContent p {
+    font-family: "Barlow", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    color: hsl(231deg, 79%, 90%);
+    text-align: center;
+  }
+  .techMainContent p:first-child {
+    font-family: "Barlow Condensed", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    letter-spacing: 2.3625px;
+    color: hsl(231deg, 79%, 90%);
+    margin-bottom: 1rem;
+  }
+  .techMainContent h1 {
+    font-family: "Bellefair";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    color: hsl(0deg, 0%, 100%);
+    text-align: center;
+    text-transform: uppercase;
+  }
+}
+@media (min-width: 600px) {
+  body {
+    height: 100vh;
+    background-image: url("../assets/technology/background-technology-tablet.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .topText {
+    display: flex;
+    width: 100%;
+  }
+  .topText p {
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 3.375px;
+    text-transform: uppercase;
+    text-align: left;
+    margin-left: 2rem;
+    color: hsl(0deg, 0%, 100%);
+  }
+  .topText p span {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 3.375px;
+    color: #ffffff;
+    mix-blend-mode: normal;
+    opacity: 0.25;
+  }
+  .mainWrapper {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .techImage {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3rem;
+    width: 100%;
+  }
+  .techImage picture {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .techImage picture img {
+    width: 768px;
+    height: 310px;
+  }
+  .techMainContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .techMainContent p {
+    font-family: "Barlow", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    color: hsl(231deg, 79%, 90%);
+    text-align: center;
+    width: 60%;
+  }
+  .techMainContent p:first-child {
+    font-family: "Barlow Condensed", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 2.7px;
+    text-align: center;
+    color: hsl(231deg, 79%, 90%);
+    margin-bottom: 1rem;
+  }
+  .techMainContent h1 {
+    font-family: "Bellefair";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 46px;
+    text-align: center;
+    text-transform: uppercase;
+    color: hsl(0deg, 0%, 100%);
+    margin-bottom: 2rem;
+  }
+}
+@media (min-width: 992px) {
+  body {
+    height: 100vh;
+    background-image: url("../assets/technology/background-technology-desktop.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .topText {
+    display: flex;
+    width: 100%;
+  }
+  .topText p {
+    font-family: "Barlow Condensed", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 34px;
+    letter-spacing: 4.725px;
+    text-transform: uppercase;
+    text-align: left;
+    margin-left: 11rem;
+    color: hsl(0deg, 0%, 100%);
+  }
+  .topText p span {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 34px;
+    letter-spacing: 4.725px;
+    color: #ffffff;
+    mix-blend-mode: normal;
+    opacity: 0.25;
+  }
+  .mainWrapper {
+    display: flex;
+    flex-direction: row;
+  }
+  .techImage {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: 3rem;
+    width: 40%;
+  }
+  .techImage picture {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .techImage picture img {
+    width: 515px;
+    height: 527px;
+  }
+  .techMainContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+  }
+  .techMainContent p {
+    font-family: "Barlow", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 32px;
+    color: hsl(231deg, 79%, 90%);
+    text-align: left;
+    width: 60%;
+  }
+  .techMainContent p:first-child {
+    font-family: "Barlow Condensed", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 2.7px;
+    text-align: left;
+    color: hsl(231deg, 79%, 90%);
+    margin-bottom: 1rem;
+  }
+  .techMainContent h1 {
+    font-family: "Bellefair";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 56px;
+    line-height: 64px;
+    text-align: left;
+    text-transform: uppercase;
+    color: hsl(0deg, 0%, 100%);
+    margin-bottom: 2rem;
+    margin-right: 3rem;
+  }
+  .contentWrapper {
+    display: flex;
+    align-items: center;
+  }
+  .navandContent {
+    display: flex;
+  }
+}
+@media (min-width: 1200px) {
+  body {
+    height: 100vh;
+    background-image: url("../assets/technology/background-technology-desktop.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .topText {
+    display: flex;
+    width: 100%;
+  }
+  .topText p {
+    font-family: "Barlow Condensed", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 34px;
+    letter-spacing: 4.725px;
+    text-transform: uppercase;
+    text-align: left;
+    margin-left: 11rem;
+    color: hsl(0deg, 0%, 100%);
+  }
+  .topText p span {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 34px;
+    letter-spacing: 4.725px;
+    color: #ffffff;
+    mix-blend-mode: normal;
+    opacity: 0.25;
+  }
+  .mainWrapper {
+    display: flex;
+    flex-direction: row;
+  }
+  .techImage {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: 3rem;
+    width: 40%;
+  }
+  .techImage picture {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .techImage picture img {
+    width: 515px;
+    height: 527px;
+  }
+  .techMainContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+  }
+  .techMainContent p {
+    font-family: "Barlow", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 32px;
+    color: hsl(231deg, 79%, 90%);
+    text-align: left;
+    width: 60%;
+  }
+  .techMainContent p:first-child {
+    font-family: "Barlow Condensed", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 2.7px;
+    text-align: left;
+    color: hsl(231deg, 79%, 90%);
+    margin-bottom: 1rem;
+  }
+  .techMainContent h1 {
+    font-family: "Bellefair";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 56px;
+    line-height: 64px;
+    text-align: left;
+    text-transform: uppercase;
+    color: hsl(0deg, 0%, 100%);
+    margin-bottom: 2rem;
+    margin-right: 3rem;
+  }
+  .contentWrapper {
+    display: flex;
+    align-items: center;
+  }
+  .navandContent {
+    display: flex;
+  }
+}/*# sourceMappingURL=styletech.css.map */
