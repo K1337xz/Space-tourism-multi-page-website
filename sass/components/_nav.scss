@@ -773,7 +773,7 @@
 			list-style: none;
 			&:hover {
 				height: 3vh;
-				border-bottom: 3px solid $h1text;
+				border-bottom: 3px solid rgba(255, 255, 255, 0.205);
 			}
 			a {
 				font-style: normal;
@@ -817,7 +817,9 @@
 			height: 10px;
 			cursor: pointer;
 			border-radius: 50%;
-
+			&:hover {
+				background-color: rgba(255, 255, 255, 0.5);
+			}
 			a {
 				top: 0;
 				left: 0;
@@ -887,6 +889,9 @@
 						text-align: center;
 						letter-spacing: 2px;
 					}
+				}
+				&:hover {
+					border: 1px solid $h1text;
 				}
 				a {
 					display: flex;
