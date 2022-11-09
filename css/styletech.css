@@ -456,6 +456,10 @@
     list-style: none;
     margin-left: 1rem;
   }
+  .navItems li.active {
+    height: 11vh;
+    border-bottom: 3px solid hsl(0deg, 0%, 100%);
+  }
   .navItems li:hover {
     height: 11vh;
     border-bottom: 3px solid hsl(0deg, 0%, 100%);
@@ -730,6 +734,7 @@
   .destinationBar li:hover {
     height: 3vh;
     border-bottom: 3px solid hsl(0deg, 0%, 100%);
+    opacity: 0.1;
   }
   .destinationBar li a {
     font-style: normal;
@@ -925,6 +930,19 @@
     border-radius: 100%;
     background-color: hsl(0deg, 0%, 100%);
     cursor: pointer;
+    z-index: 2;
+  }
+  .rightButton .circle:hover::before {
+    position: absolute;
+    content: "";
+    width: 450px;
+    height: 450px;
+    border-radius: 100%;
+    background-color: hsl(0deg, 0%, 100%);
+    opacity: 0.2;
+    z-index: -1;
+    -webkit-animation: animate 1.6s linear infinite;
+            animation: animate 1.6s linear infinite;
   }
   .rightButton .circle a {
     text-decoration: none;
@@ -934,6 +952,22 @@
     font-size: 32px;
     line-height: 37px;
     letter-spacing: 2px;
+  }
+}
+@-webkit-keyframes animate {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0.7);
+  }
+}
+@keyframes animate {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0.7);
   }
 }
 @media (max-width: 600px) {

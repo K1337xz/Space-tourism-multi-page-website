@@ -484,6 +484,10 @@
 			align-items: center;
 			list-style: none;
 			margin-left: 1rem;
+			&.active {
+				height: 11vh;
+				border-bottom: 3px solid $h1text;
+			}
 			&:hover {
 				height: 11vh;
 				border-bottom: 3px solid $h1text;
@@ -507,6 +511,7 @@
 				letter-spacing: 2.7px;
 			}
 		}
+
 		.cls {
 			display: none;
 			width: 100%;
