@@ -31,12 +31,27 @@ for (let i = 0; i < destinationNav.length; i++) {
 			const timeLeft = document.querySelector(".timeInner");
 			const destinationImage =
 				document.querySelector(".activeDestination");
-
+			//add active class to active destination
+			for (let x = 0; x < destinationNav.length; x++) {
+				if (destinationNav[x].classList.contains("active")) {
+					destinationNav[x].classList.remove("active");
+				}
+			}
+			destinationNav[i].classList.add("active");
 			const data = await loadData();
 			const destination = data.destinations;
-			if (destinationNav[i].firstChild.textContent === `Mars`) {
-				const result = destination.filter((x) => x.name === "Moon");
-				console.log(result.name);
+			let nameofClick = destinationNav[i].firstChild.textContent;
+
+			//change content after click
+			for (let i = 0; i < destination.length; i++) {
+				if (nameofClick === destination[i].name) {
+					destinatioName.textContent = destination[i].name;
+					distance.textContent = destination[i].distance;
+					timeLeft.textContent = destination[i].travel;
+					destinationDescribe.textContent =
+						destination[i].description;
+					destinationImage.src = destination[i].images.webp;
+				}
 			}
 		} catch (e) {
 			console.log("errror");
@@ -44,4 +59,4 @@ for (let i = 0; i < destinationNav.length; i++) {
 		}
 	});
 }
-console.log(destinationNav);
+//crew meber pick

@@ -89,6 +89,10 @@
 		font-family: $barlowCondensed;
 		li {
 			list-style: none;
+			&.active {
+				height: 4vh;
+				border-bottom: 3px solid $h1text;
+			}
 			a {
 				text-decoration: none;
 				text-transform: uppercase;
@@ -302,6 +306,10 @@
 		margin-top: 1rem;
 		li {
 			list-style: none;
+			&.active {
+				height: 3vh;
+				border-bottom: 3px solid $h1text;
+			}
 			a {
 				font-style: normal;
 				font-weight: 400;
@@ -774,6 +782,10 @@
 			&:hover {
 				height: 3vh;
 				border-bottom: 3px solid rgba(255, 255, 255, 0.205);
+			}
+			&.active {
+				height: 3vh;
+				border-bottom: 3px solid $h1text;
 			}
 			a {
 				font-style: normal;
