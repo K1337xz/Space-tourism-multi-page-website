@@ -96,3 +96,25 @@ for (let z = 0; z < crewNav.length; z++) {
 }
 
 //pick technology
+
+const numberNav = document.querySelectorAll(".numberNav li");
+
+for (let y = 0; y < numberNav.length; y++) {
+	numberNav[y].addEventListener("click", async (e) => {
+		try {
+			e.preventDefault();
+			const data = await loadData();
+			const technologyData = data.technology;
+			const terminology = document.querySelector(".techMainContent h1");
+			const techDescription = document.querySelector(".techDescription");
+			console.log(numberNav[y].dataset.type);
+			for (let i = 0; i < technologyData.length; i++) {
+				if (1 === 1) {
+				}
+			}
+		} catch (e) {
+			console.log("error");
+			console.log(e);
+		}
+	});
+}
