@@ -1396,9 +1396,14 @@
     flex-direction: column-reverse;
     align-items: center;
   }
+  .cellNav {
+    width: 100%;
+    margin-left: 21rem;
+  }
   .contentCrew {
     text-align: left;
     margin-top: 1rem;
+    width: 100%;
   }
   .contentCrew .role {
     font-family: "Bellefair", serif;
@@ -1417,8 +1422,10 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: flex-start;
     text-align: left;
     margin-bottom: 5rem;
+    margin-left: 11rem;
   }
   .contentCrew .crewBio h1 {
     font-family: "Bellefair", serif;
@@ -1430,7 +1437,7 @@
     text-transform: uppercase;
     color: hsl(0deg, 0%, 100%);
     margin-top: 0.5rem;
-    margin-left: 2rem;
+    margin-left: 0;
   }
   .contentCrew .crewBio p {
     margin-top: 1rem;
@@ -1440,6 +1447,6 @@
     font-size: 18px;
     line-height: 32px;
     color: hsl(231deg, 79%, 90%);
-    width: 54%;
+    width: 60%;
   }
 }/*# sourceMappingURL=stylecrew.css.map */
