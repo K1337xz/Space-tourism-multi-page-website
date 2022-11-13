@@ -107,9 +107,38 @@ for (let y = 0; y < numberNav.length; y++) {
 			const technologyData = data.technology;
 			const terminology = document.querySelector(".techMainContent h1");
 			const techDescription = document.querySelector(".techDescription");
-			console.log(numberNav[y].dataset.type);
+			const techMobile = document.querySelector(".technologyMobile");
+			const techTablet = document.querySelector(".technologyTablet");
+			const techDeskstop = document.querySelector(".technologyDesktop");
+			let nameofTerminology = numberNav[y].dataset.type;
 			for (let i = 0; i < technologyData.length; i++) {
-				if (1 === 1) {
+				if (
+					window.matchMedia("(max-width:599px)").matches &&
+					technologyData[i].name === nameofTerminology
+				) {
+					terminology.textContent = technologyData[i].name;
+					techDescription.textContent = technologyData[i].description;
+					techMobile.srcset = technologyData[i].images.landscape;
+				} else if (
+					window.matchMedia("(max-width:799px)").matches &&
+					technologyData[i].name === nameofTerminology
+				) {
+					terminology.textContent = technologyData[i].name;
+					techDescription.textContent = technologyData[i].description;
+					techTablet.srcset = technologyData[i].images.landscape;
+				} else if (
+					window.matchMedia("(min-width:1200px)").matches &&
+					technologyData[i].name === nameofTerminology
+				) {
+					terminology.textContent = technologyData[i].name;
+					techDescription.textContent = technologyData[i].description;
+					techDeskstop.src = technologyData[i].images.portrait;
+				}
+				for (let x = 0; x < numberNav.length; x++) {
+					if (numberNav[x].classList.contains("active")) {
+						numberNav[x].classList.remove("active");
+					}
+					numberNav[y].classList.add("active");
 				}
 			}
 		} catch (e) {
